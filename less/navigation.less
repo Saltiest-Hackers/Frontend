@@ -4,7 +4,7 @@
 nav{
     display:flex;
     justify-content: center;
-    background-color: @blue;
+    background-color: @nav-background;
     //border: 1px solid @nav-border;
     .nav-container{
         .flex-layout(space-between, center);
@@ -18,9 +18,9 @@ nav{
         a {
             font-size: 1.6rem;
             color: @nav-font;
-            font-family: 'Ubuntu', sans-serif;
+            font-family: 'Oxanium', sans-serif;
             &:hover{
-                //color: @shuttle-gray;
+                color: @backdrop-color;
             }//psudo closer
         }//a closer
         .logo a {

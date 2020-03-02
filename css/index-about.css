@@ -187,7 +187,10 @@ nav .nav-container .links {
 nav .nav-container a {
   font-size: 1.6rem;
   color: #F6F7F8;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Oxanium', sans-serif;
+}
+nav .nav-container a:hover {
+  color: #363636;
 }
 nav .nav-container .logo a {
   height: 16px;
@@ -232,4 +235,25 @@ header h1 {
 }
 .info .img img {
   border-radius: 50%;
+}
+@media (max-width: 500px) {
+  .info {
+    flex-direction: column-reverse;
+    margin: 3%;
+  }
+  .info .person {
+    width: 100%;
+    margin: 2% 0;
+  }
+  .info .img {
+    width: 100%;
+    justify-content: center;
+    margin: 3% 0;
+  }
+}
+footer.footertoo {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  background-color: #3967ad;
 }
