@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
 
 import dummy from '../assets/MOCK_DATA.json'
-import { Card } from '@material-ui/core';
+import Comment from './Comment';
 
 const Feed = () => {
-    const [data, setData] = useState(dummy);
+    const [data] = useState(dummy);
+    const [display, setDisplay] = useState(dummy);
     return (
         <React.Fragment>
             <h1>Comment Feed</h1>
             {data.map((comment) => {
                 return (
-                    <Card>
-                        <h3>{comment.username}</h3>
-                        <p>{comment.saltiness}</p>
-                        <p>{comment.comment}</p>
-                    </Card>
+                    <Comment comment={comment} />
                 )
             })}
         </React.Fragment>
