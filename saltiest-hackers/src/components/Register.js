@@ -1,27 +1,29 @@
 import React, { useState } from 'react';
 import { Button, TextField, Dialog, DialogContent, DialogActions, DialogTitle } from '@material-ui/core';
+import { Link, useHistory } from 'react-router-dom';
 
 const Register = (props) => {
+    const history = useHistory();
     return (
         <Dialog open={props.open}>
             <DialogTitle id='form-dialog-title'>Register</DialogTitle>
             <DialogContent>
-                <TextField label='username' 
+                <TextField label='Username' 
                            variant='outlined' 
                            fullWidth='true' 
                            margin='normal' 
-                           autocomplete='username' 
+                           autocomplete='username'
                 />
-                <TextField label='password' 
+                <TextField label='Password' 
                            type='password' 
                            variant='outlined' 
                            fullWidth='true' 
                            margin='normal' 
-                           autocomplete='new-password' 
+                           autocomplete='new-password'
                 />
             </DialogContent>
             <DialogActions>
-                <Button>Login</Button>
+                <Button onClick={() => history.push('/feed')}>Login</Button>
                 <Button onClick={() => props.opener(false)}>Cancel</Button>
             </DialogActions>
         </Dialog>

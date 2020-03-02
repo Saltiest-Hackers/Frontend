@@ -3,8 +3,7 @@ import { Route } from 'react-router-dom';
 import { CssBaseline, Container } from '@material-ui/core';
 
 import Home from './components/Home';
-import Login from './components/Login';
-import Register from './components/Register';
+import Feed from './components/Feed';
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
           <Home />
         </Route>
         <Route path='/feed'>
-
+          <Feed />
         </Route>
       </Container>
     </React.Fragment>
