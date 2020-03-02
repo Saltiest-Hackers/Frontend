@@ -7,8 +7,19 @@ const Login = () => {
         <Dialog open={open}>
             <DialogTitle id='form-dialog-title'>Login</DialogTitle>
             <DialogContent>
-                <TextField label='username' variant='outlined' fullWidth='true' margin='normal' />
-                <TextField label='password' type='password' variant='outlined' fullWidth='true' margin='normal' />
+                <TextField label='username' 
+                           variant='outlined' 
+                           fullWidth='true' 
+                           margin='normal' 
+                           autocomplete='username' 
+                />
+                <TextField label='password' 
+                           type='password' 
+                           variant='outlined' 
+                           fullWidth='true' 
+                           margin='normal' 
+                           autocomplete='current-password' 
+                />
             </DialogContent>
             <DialogActions>
                 <Button>Login</Button>
