@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Button, TextField, Dialog, DialogContent, DialogActions, DialogTitle } from '@material-ui/core';
 
 const Login = () => {
+    const [ open, setOpen ] = useState(true)
     return (
-        <React.Fragment>
-            <h2>Login</h2>
-            <form>
-                <label htmlFor='username'>Username: 
-                    <input type='text' name='username' id='username' placeholder='username'/>
-                </label>
-                <label htmlFor='password'>Password:
-                    <input type='password' name='password' id='password' placeholder='password'/>
-                </label>
-            </form>
-        </React.Fragment>
+        <Dialog open={open}>
+            <DialogTitle id='form-dialog-title'>Login</DialogTitle>
+            <DialogContent>
+                <TextField label='username' variant='outlined' fullWidth='true' margin='normal' />
+                <TextField label='password' type='password' variant='outlined' fullWidth='true' margin='normal' />
+            </DialogContent>
+            <DialogActions>
+                <Button>Login</Button>
+                <Button>Cancel</Button>
+            </DialogActions>
+        </Dialog>
     )
 }
 
