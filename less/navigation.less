@@ -1,0 +1,39 @@
+// Navigation code here
+//@nav-border: @sea-shell;
+
+nav{
+    display:flex;
+    justify-content: center;
+    background-color: @blue;
+    //border: 1px solid @nav-border;
+    .nav-container{
+        .flex-layout(space-between, center);
+        width: 900px;
+        padding: 1% 0;
+
+        .links {
+            .flex-layout(space-between, center);
+            width: 50%;
+        }//links closer
+        a {
+            font-size: 1.6rem;
+            color: @nav-font;
+            font-family: 'Ubuntu', sans-serif;
+            &:hover{
+                //color: @shuttle-gray;
+            }//psudo closer
+        }//a closer
+        .logo a {
+            height: 16px;
+        }//logo size
+        @media @phone {
+            padding: 2% 10%;
+            flex-direction: column;
+
+            div.links {
+                margin-bottom: 2%;
+                width: 100%;
+            }//media links closer
+        }//media closer
+    }//nav-container closer
+}//nav closer
