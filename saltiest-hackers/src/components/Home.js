@@ -10,8 +10,8 @@ const Home = () => {
     return (
         <React.Fragment>
             <h1>Saltiest Hackers</h1>
-            <Button onClick={() => setLoginOpen(true)}>Login</Button>
-            <Button onClick={() => setRegisterOpen(true)}>Register</Button>
+            <Button variant='contained' color='primary' onClick={() => setLoginOpen(true)}>Login</Button>
+            <Button variant='contained' color='secondary' onClick={() => setRegisterOpen(true)}>Register</Button>
             <Login open={loginOpen} opener={setLoginOpen} />
             <Register open={registerOpen} opener={setRegisterOpen} />
         </React.Fragment>    

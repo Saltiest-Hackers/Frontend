@@ -23,7 +23,7 @@ const Register = (props) => {
                 />
             </DialogContent>
             <DialogActions>
-                <Button onClick={() => history.push('/feed')}>Login</Button>
+                <Button onClick={() => history.push('/feed')}>Register</Button>
                 <Button onClick={() => props.opener(false)}>Cancel</Button>
             </DialogActions>
         </Dialog>

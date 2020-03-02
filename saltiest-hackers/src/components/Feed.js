@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Button } from '@material-ui/core';
 
 import dummy from '../assets/MOCK_DATA.json'
 import Comment from './Comment';
+
 
 const Feed = () => {
     const [data] = useState(dummy);
@@ -25,7 +27,7 @@ const Feed = () => {
     return (
         <React.Fragment>
             <h1>Comment Feed</h1>
-            <button onClick={() => sortBySaltiness()}>Sort</button>
+            <Button variant='contained' onClick={() => sortBySaltiness()}>Sort</Button>
             {display.map((comment) => {
                 return (
                     <Comment comment={comment} />
