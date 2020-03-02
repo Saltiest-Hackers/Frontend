@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Button, TextField, Dialog, DialogContent, DialogActions, DialogTitle } from '@material-ui/core';
 
-const Login = () => {
-    const [ open, setOpen ] = useState(true)
+const Login = (props) => {
     return (
-        <Dialog open={open}>
+        <Dialog open={props.open}>
             <DialogTitle id='form-dialog-title'>Login</DialogTitle>
             <DialogContent>
                 <TextField label='username' 
@@ -23,7 +22,7 @@ const Login = () => {
             </DialogContent>
             <DialogActions>
                 <Button>Login</Button>
-                <Button>Cancel</Button>
+                <Button onClick={() => props.opener(false)}>Cancel</Button>
             </DialogActions>
         </Dialog>
     )
