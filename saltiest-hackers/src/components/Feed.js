@@ -3,6 +3,7 @@ import { Button, Typography, makeStyles } from '@material-ui/core';
 
 import dummy from '../assets/MOCK_DATA.json'
 import Comment from './Comment';
+import Filters from './Filters.js';
 
 const useStyles = makeStyles({
     title: {
@@ -19,23 +20,10 @@ const Feed = () => {
     useEffect(() => {
         setDisplay(data);
     }, [data])
-    const sortBySaltiness = () => {
-        const newArr = [ ...data ];
-        newArr.sort((a, b) => {
-            if (a.saltiness > b.saltiness) {
-                return 1;
-            }
-            else if (a.saltiness < b.saltiness) {
-                return -1;
-            }
-            return 0;
-        });
-        setDisplay(newArr);
-    }
     return (
         <React.Fragment>
             <Typography variant='h4' className={classes.title}>Comment Feed</Typography>
-            <Button variant='contained' onClick={() => sortBySaltiness()}>Sort</Button>
+            <Filters data={data} display={display} setDisplay={setDisplay} />
             {display.map((comment, index) => {
                 return (
                     <Comment key={index} comment={comment} />
