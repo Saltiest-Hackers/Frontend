@@ -5,10 +5,13 @@ nav{
     display:flex;
     justify-content: center;
     background-color: @nav-background;
-    //border: 1px solid @nav-border;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid @main-background-color;
     .nav-container{
         .flex-layout(space-between, center);
-        width: 900px;
+        width: 80%;
         padding: 1% 0;
 
         .links {
@@ -31,9 +34,12 @@ nav{
             flex-direction: column;
 
             div.links {
-                margin-bottom: 2%;
+                margin: 2% 0;
                 width: 100%;
             }//media links closer
         }//media closer
+        @media @phone {
+            width: 100%;
+        }
     }//nav-container closer
 }//nav closer
