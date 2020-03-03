@@ -8,6 +8,9 @@ const useStyles = makeStyles({
         flexDirection: 'column',
         alignItems: 'flex-start',
     },
+    searchBar: {
+        marginBottom: '2%',
+    },
     resetButton: {
         marginTop: '2%',
     },
@@ -88,6 +91,7 @@ const Filters = (props) => {
                 <Typography>Filters</Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails className={classes.boxContent}>
+                <TextField onChange={(e) => setSearch(e.target.value)} value={search} label='Search' fullWidth={true} className={classes.searchBar}/>
                 <InputLabel htmlFor='sort' id='sort-label'>Sort By</InputLabel> 
                 <Select onChange={(e) => setSort(e.target.value)} id='sort' labelId='sort-label' autoWidth value={sort}>
                     <MenuItem value=''>None</MenuItem>
@@ -96,7 +100,6 @@ const Filters = (props) => {
                     <MenuItem value='alpha'>Alphabetically</MenuItem>
                     <MenuItem value='revAlpha'>Reverse Alphabetically</MenuItem>
                 </Select>
-                <TextField onChange={(e) => setSearch(e.target.value)} value={search} label='Search' fullWidth={true} />
                 <Button onClick={() => resetDisplay()} variant='outlined' className={classes.resetButton}>Reset</Button>
             </ExpansionPanelDetails>
         </ExpansionPanel>
