@@ -7,7 +7,7 @@ const Register = (props) => {
     // create history object so we can use it to change pages on submit
     const history = useHistory();
     // pull form methods from useForm
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, errors } = useForm();
     // submission function
     const onSubmit = (values) => {
         console.log(values);
@@ -24,7 +24,9 @@ const Register = (props) => {
                             margin='normal' 
                             autoComplete='username'
                             name='username'
-                            inputRef={register}
+                            inputRef={register({ required: true })}
+                            error={errors.username ? true : false }
+                            helperText={errors.username ? 'Username required' : " " }
                     />
                     <TextField label='Password' 
                             type='password' 
@@ -33,7 +35,9 @@ const Register = (props) => {
                             margin='normal' 
                             autoComplete='new-password'
                             name='password'
-                            inputRef={register}
+                            inputRef={register({ required: true })}
+                            error={errors.password ? true : false }
+                            helperText={errors.password ? 'Password required' : " " }
                     />
                     <Button variant='outlined' type='submit'>Register</Button>
                 </form>

@@ -13,7 +13,6 @@ const Login = (props) => {
         console.log(values);
         history.push('/feed');
     }
-    console.log(errors.username, 'errors');
     return (
         <Dialog open={props.open}>
             <DialogTitle id='form-dialog-title'>Login</DialogTitle>
@@ -26,6 +25,8 @@ const Login = (props) => {
                             autoComplete='username'
                             name='username'
                             inputRef={register({ required: true })}
+                            error={errors.username ? true : false }
+                            helperText={errors.username ? 'Username required' : " " }
                     />
                     <TextField label='Password' 
                             type='password' 
@@ -34,7 +35,9 @@ const Login = (props) => {
                             margin='normal' 
                             autoComplete='current-password'
                             name='password'
-                            inputRef={register} 
+                            inputRef={register({ required: true })}
+                            error={errors.password ? true : false }
+                            helperText={errors.password ? 'Password required' : " " } 
                     />
                     <Button type='submit' variant='outlined'>Login</Button>
                 </form>
