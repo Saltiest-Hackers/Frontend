@@ -16,6 +16,7 @@ const useStyles = makeStyles({
     backgroundPosition: 'center center'
   },
   column: {
+    minHeight: '100vh',
     backgroundColor: 'black',
   }
 })
