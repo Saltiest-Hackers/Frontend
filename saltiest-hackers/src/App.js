@@ -15,6 +15,9 @@ const useStyles = makeStyles({
     backgroundRepeat: 'none',
     backgroundPosition: 'center center'
   },
+  column: {
+    backgroundColor: 'black',
+  }
 })
 
 function App() {
@@ -23,7 +26,7 @@ function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container className={location.pathname === '/' ? classes.homeColumn : undefined } maxWidth='md' >
+      <Container className={location.pathname === '/' ? classes.homeColumn : classes.column } maxWidth='md' >
         <Route exact path='/'>
           <Home />
         </Route>

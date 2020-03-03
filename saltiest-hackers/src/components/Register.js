@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, TextField, Dialog, DialogContent, DialogActions, DialogTitle } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import axios from 'axios';
 
 const Register = (props) => {
     // create history object so we can use it to change pages on submit
@@ -10,7 +11,8 @@ const Register = (props) => {
     const { register, handleSubmit, errors } = useForm();
     // submission function
     const onSubmit = (values) => {
-        console.log(values);
+        axios.post('https://reqres.in/api/users', values)
+             .then(response => (console.log(response)));
         history.push('/feed');
     }
     return (
