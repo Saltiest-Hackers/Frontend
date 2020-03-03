@@ -1,11 +1,23 @@
 import React from 'react';
-import './App.css';
+import { Route } from 'react-router-dom';
+import { CssBaseline, Container } from '@material-ui/core';
+
+import Home from './components/Home';
+import Feed from './components/Feed';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Saltiest Hackers</h1>
-    </div>
+    <React.Fragment>
+      <CssBaseline />
+      <Container maxWidth='md' >
+        <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route path='/feed'>
+          <Feed />
+        </Route>
+      </Container>
+    </React.Fragment>
   );
 }
 
