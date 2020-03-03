@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, ExpansionPanel, ExpansionPanelSummary, ExpansionPanelDetails, InputLabel, makeStyles, MenuItem, Select, Typography, TextField } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
@@ -14,6 +14,7 @@ const useStyles = makeStyles({
 })
 
 const Filters = (props) => {
+    const [sort, setSort] = useState('');
     // Function to sort list either by ascending or descending value; alphabetically or numerically
     const sortBySaltiness = (direction, prop) => {
         let num = 0;
@@ -35,6 +36,7 @@ const Filters = (props) => {
         props.setDisplay(newArr);
     }
     const filterByName = (term) => {
+        setSort('');
         const newArr = [ ...props.data ];
         const filtered = newArr.filter((comment) => {
             return comment.username.includes(term)
@@ -42,9 +44,9 @@ const Filters = (props) => {
         props.setDisplay(filtered);
     }
     // Function containing all switch logic for filters
-    const filterSwitch = (sort) => {
-        if(sort) {
-            switch (sort) {
+    const filterSwitch = (filter) => {
+        if(filter) {
+            switch (filter) {
                 case 'ascSalt': 
                     sortBySaltiness('ascending', 'saltiness');
                     break;
@@ -57,9 +59,16 @@ const Filters = (props) => {
                 case 'revAlpha':
                     sortBySaltiness('descending', 'username');
                     break;
+                default:
+                    console.error('Invalid filter type')
+                    break;
             }
         }
     }
+    // useEffect to update the list with relevant filters 
+    useEffect(() => {
+        filterSwitch(sort);  
+    }, [sort])
     // Function to reset display back to the original data
     const resetDisplay = () => props.setDisplay(props.data);
     const classes = useStyles();
@@ -70,7 +79,7 @@ const Filters = (props) => {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails className={classes.boxContent}>
                 <InputLabel htmlFor='sort'>Sort By</InputLabel> 
-                <Select onChange={(e) => filterSwitch(e.target.value)} id='sort' labelId='sort'>
+                <Select onChange={(e) => setSort(e.target.value)} id='sort' labelId='sort' autoWidth value={sort}>
                     <MenuItem value=''>None</MenuItem>
                     <MenuItem value='ascSalt'>Saltiness (low - high)</MenuItem>
                     <MenuItem value='descSalt'>Saltiness (high - low)</MenuItem>
