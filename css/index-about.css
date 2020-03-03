@@ -235,6 +235,11 @@ header h1 {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  header {
+    margin-top: 20%;
+  }
+}
 .info {
   margin: 3% 0;
   background-color: #3967ad;
