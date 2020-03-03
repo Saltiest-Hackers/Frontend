@@ -7,11 +7,13 @@ const Login = (props) => {
     // create history object so we can use it to change pages on submit
     const history = useHistory();
     // pull form methods from useForm
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, errors } = useForm();
     // submission function
     const onSubmit = (values) => {
-        console.log(values)
+        console.log(values);
+        history.push('/feed');
     }
+    console.log(errors.username, 'errors');
     return (
         <Dialog open={props.open}>
             <DialogTitle id='form-dialog-title'>Login</DialogTitle>
@@ -23,7 +25,7 @@ const Login = (props) => {
                             margin='normal' 
                             autoComplete='username'
                             name='username'
-                            inputRef={register} 
+                            inputRef={register({ required: true })}
                     />
                     <TextField label='Password' 
                             type='password' 
@@ -34,11 +36,10 @@ const Login = (props) => {
                             name='password'
                             inputRef={register} 
                     />
-                    <Button type='submit'>Login</Button>
+                    <Button type='submit' variant='outlined'>Login</Button>
                 </form>
             </DialogContent>
-            <DialogActions>
-                
+            <DialogActions>    
                 <Button onClick={() => props.opener(false)}>Cancel</Button>
             </DialogActions>
         </Dialog>

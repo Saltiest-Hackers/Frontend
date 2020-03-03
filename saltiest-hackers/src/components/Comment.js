@@ -3,7 +3,6 @@ import { Card, Typography, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
     card: {
-        minWidth: 800,
         padding: '1%',
         margin: '2%',
     },

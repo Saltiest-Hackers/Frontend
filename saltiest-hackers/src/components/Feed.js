@@ -28,9 +28,9 @@ const Feed = () => {
         <React.Fragment>
             <Typography variant='h4'>Comment Feed</Typography>
             <Button variant='contained' onClick={() => sortBySaltiness()}>Sort</Button>
-            {display.map((comment) => {
+            {display.map((comment, index) => {
                 return (
-                    <Comment comment={comment} />
+                    <Comment key={index} comment={comment} />
                 )
             })}
         </React.Fragment>
