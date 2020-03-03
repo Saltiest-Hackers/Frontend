@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
-import { Button, ExpansionPanel, ExpansionPanelSummary, ExpansionPanelDetails, MenuItem, Select, Typography, TextField } from '@material-ui/core';
+import { Button, ExpansionPanel, ExpansionPanelSummary, ExpansionPanelDetails, InputLabel, makeStyles, MenuItem, Select, Typography, TextField } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
+const useStyles = makeStyles({
+    boxContent: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+    },
+    resetButton: {
+        marginTop: '2%',
+    },
+})
 
 const Filters = (props) => {
     // Function to sort list either by ascending or descending value; alphabetically or numerically
@@ -49,22 +60,25 @@ const Filters = (props) => {
             }
         }
     }
+    // Function to reset display back to the original data
     const resetDisplay = () => props.setDisplay(props.data);
+    const classes = useStyles();
     return (
         <ExpansionPanel>
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                 <Typography>Filters</Typography>
             </ExpansionPanelSummary>
-            <ExpansionPanelDetails>
-                <Select onChange={(e) => filterSwitch(e.target.value)}>
-                    <MenuItem value='' disabled>Sort By</MenuItem>
+            <ExpansionPanelDetails className={classes.boxContent}>
+                <InputLabel htmlFor='sort'>Sort By</InputLabel> 
+                <Select onChange={(e) => filterSwitch(e.target.value)} id='sort' labelId='sort'>
+                    <MenuItem value=''>None</MenuItem>
                     <MenuItem value='ascSalt'>Saltiness (low - high)</MenuItem>
                     <MenuItem value='descSalt'>Saltiness (high - low)</MenuItem>
                     <MenuItem value='alpha'>Alphabetically</MenuItem>
                     <MenuItem value='revAlpha'>Reverse Alphabetically</MenuItem>
                 </Select>
                 <TextField onChange={(e) => filterByName(e.target.value)} label='Search' fullWidth={true} />
-                <Button onClick={() => resetDisplay()} variant='outlined'>Reset</Button>
+                <Button onClick={() => resetDisplay()} variant='outlined' className={classes.resetButton}>Reset</Button>
             </ExpansionPanelDetails>
         </ExpansionPanel>
     )
