@@ -10,6 +10,11 @@ const useStyles = makeStyles({
         color: 'white',
         textAlign: 'center',
         paddingTop: '3%'
+    },
+    error: {
+        color: 'white',
+        textAlign: 'center',
+        paddingTop: '3%'
     }
 })
 
@@ -24,6 +29,7 @@ const Feed = () => {
         <React.Fragment>
             <Typography variant='h4' className={classes.title}>Comment Feed</Typography>
             <Filters data={data} display={display} setDisplay={setDisplay} />
+            {display.length > 0 ? undefined : <h1 className={classes.error}>No matches</h1>}
             {display.map((comment, index) => {
                 return (
                     <Comment key={index} comment={comment} />
