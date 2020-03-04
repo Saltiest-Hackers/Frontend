@@ -34,7 +34,7 @@ const Nav = (props) => {
                 <nav className={classes.nav}>
                     <NavLink className={classes.navLink} to='/feed'>Home</NavLink>
                     <NavLink className={classes.navLink} to='/saved'>Saved</NavLink>
-                    {/* <NavLink className={classes.navLink} to='/saved'>Saltiest Users</NavLink> */}
+                    <NavLink className={classes.navLink} to='/saltiest'>Saltiest Users</NavLink>
                 </nav>
             </Toolbar>
         </AppBar>

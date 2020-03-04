@@ -9,6 +9,7 @@ import Nav from './components/Nav';
 import Commenter from './components/Commenter';
 
 import background from './assets/background.jpg'
+import SaltiestUsers from './components/SaltiestUsers';
 
 
 const useStyles = makeStyles({
@@ -45,6 +46,9 @@ function App() {
         </Route>
         <Route path='/commenter/:id'>
           <Commenter />
+        </Route>
+        <Route path='/saltiest'>
+          <SaltiestUsers />
         </Route>
       </Container>
     </React.Fragment>
