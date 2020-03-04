@@ -33,7 +33,7 @@ const Comment = (props) => {
                     <Link to={`/commenter/${comment.author}`}>{comment.author}</Link>
                 </Typography>
                 <Typography>
-                    Saltiness: {comment.saltiness * 100}
+                    Saltiness: {parseFloat((comment.saltiness * 100).toFixed(1))}%
                 </Typography>
                 <LinearProgress variant='determinate' value={comment.saltiness * 100} />
                 <Typography component='time'>
