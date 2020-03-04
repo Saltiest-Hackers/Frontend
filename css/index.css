@@ -157,6 +157,9 @@ h2 {
 h3 {
   font-size: 2.8rem;
 }
+h4 {
+  font-size: 2rem;
+}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
@@ -235,6 +238,12 @@ header h1 {
     width: 100%;
   }
 }
+@media (max-width: 800px) {
+  header {
+    margin-top: 8%;
+    padding: 0 2%;
+  }
+}
 @media (max-width: 500px) {
   header {
     margin-top: 20%;
@@ -246,16 +255,22 @@ header h1 {
   display: flex;
   padding: 3% 3%;
 }
+.info a {
+  color: #F6F7F8;
+}
 .info .person {
   margin-left: 2%;
   margin-top: 2%;
   width: 65%;
 }
-.info .person h2 {
-  border-bottom: 1px solid #363636;
-}
 .info .person p {
   margin-top: 2%;
+}
+.info .person .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #363636;
 }
 .info .img {
   display: flex;
@@ -265,6 +280,20 @@ header h1 {
 .info .img img {
   border-radius: 50%;
   border: 2px solid #363636;
+  max-width: 300px;
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+}
+@media (max-width: 800px) {
+  .info {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .info .img {
+    max-width: 225px;
+    max-height: 225px;
+  }
 }
 @media (max-width: 500px) {
   .info {
@@ -280,10 +309,17 @@ header h1 {
     justify-content: center;
     margin: 3% 0;
   }
+  .info .img img {
+    max-width: 200px;
+    max-height: 200px;
+  }
 }
 .info:nth-child(2n) {
   background-color: #F6F7F8;
   flex-direction: row-reverse;
+  color: #363636;
+}
+.info:nth-child(2n) a {
   color: #363636;
 }
 .info:nth-child(2n) .person {
