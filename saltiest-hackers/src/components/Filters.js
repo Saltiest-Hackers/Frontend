@@ -44,7 +44,7 @@ const Filters = (props) => {
         setSort('');
         const newArr = [ ...props.data ];
         const filtered = newArr.filter((comment) => {
-            return comment.username.includes(term)
+            return comment.author.includes(term)
         })
         props.setDisplay(filtered);
     }
@@ -63,10 +63,16 @@ const Filters = (props) => {
                     sortBySaltiness('descending', 'saltiness');
                     break;
                 case 'alpha':
-                    sortBySaltiness('ascending', 'username');
+                    sortBySaltiness('ascending', 'author');
                     break;
                 case 'revAlpha':
-                    sortBySaltiness('descending', 'username');
+                    sortBySaltiness('descending', 'author');
+                    break;
+                case 'date':
+                    sortBySaltiness('descending', 'time');
+                    break;
+                case 'revDate':
+                    sortBySaltiness('ascending', 'time');
                     break;
                 default:
                     console.error('Invalid filter type')
@@ -99,6 +105,8 @@ const Filters = (props) => {
                     <MenuItem value='descSalt'>Saltiness (high - low)</MenuItem>
                     <MenuItem value='alpha'>Alphabetically</MenuItem>
                     <MenuItem value='revAlpha'>Reverse Alphabetically</MenuItem>
+                    <MenuItem value='date'>Newest</MenuItem>
+                    <MenuItem value='revDate'>Oldest</MenuItem>
                 </Select>
                 <Button onClick={() => resetDisplay()} variant='outlined' className={classes.resetButton}>Reset</Button>
             </ExpansionPanelDetails>

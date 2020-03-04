@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Typography, makeStyles } from '@material-ui/core';
+import { Card, CardContent, Fab, Typography, makeStyles } from '@material-ui/core';
+import SaveIcon from '@material-ui/icons/Save';
 
 const useStyles = makeStyles({
     card: {
@@ -15,17 +16,27 @@ const useStyles = makeStyles({
 const Comment = (props) => {
     const classes= useStyles();
     const comment = props.comment;
+    // Format date from python date string to user readable date
+    const commentDate = new Date(comment.time * 1000).toDateString().slice(4)
     return (
         <Card className={classes.card}>
-            <Typography className={classes.title}>
-                {comment.username}
-            </Typography>
-            <Typography>
-                {comment.saltiness}
-            </Typography>
-            <Typography>
-                {comment.comment}
-            </Typography>
+            <CardContent>
+                <Typography className={classes.title} component='h2'>
+                    {comment.author}
+                </Typography>
+                <Typography>
+                    Saltiness: {comment.saltiness * 100}
+                </Typography>
+                <Typography component='time'>
+                    {commentDate}
+                </Typography>
+                <Typography>
+                    {comment.comment_text}
+                </Typography>
+                <Fab size='small' aria-label='save'>
+                    <SaveIcon />
+                </Fab>
+            </CardContent>        
         </Card>
     )
 }

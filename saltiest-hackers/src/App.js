@@ -27,7 +27,7 @@ function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container className={location.pathname === '/' ? classes.homeColumn : classes.column } maxWidth='md' >
+      <Container component='main' className={location.pathname === '/' ? classes.homeColumn : classes.column } maxWidth='md' >
         <Route exact path='/'>
           <Home />
         </Route>
