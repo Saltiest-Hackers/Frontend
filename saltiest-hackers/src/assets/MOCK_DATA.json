@@ -676,7 +676,7 @@
         "comment_text": "No",
         "id": 22186715,
         "parent_id": 22185918,
-        "saltiness": 1,
+        "saltiness": 0.48,
         "time": 1580337288
     },
     {
@@ -684,7 +684,7 @@
         "comment_text": "No",
         "id": 21710486,
         "parent_id": 21691802,
-        "saltiness": 1,
+        "saltiness": 0.11,
         "time": 1575529034
     },
     {
@@ -692,7 +692,7 @@
         "comment_text": "No.",
         "id": 21895528,
         "parent_id": 21895368,
-        "saltiness": 1,
+        "saltiness": 0.32,
         "time": 1577487404
     },
     {

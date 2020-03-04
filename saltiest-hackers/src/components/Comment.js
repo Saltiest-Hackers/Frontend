@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, Fab, Typography, makeStyles } from '@material-ui/core';
+import { Card, CardContent, LinearProgress, Fab, Typography, makeStyles } from '@material-ui/core';
 import SaveIcon from '@material-ui/icons/Save';
 
 const useStyles = makeStyles({
@@ -27,11 +27,12 @@ const Comment = (props) => {
                 <Typography>
                     Saltiness: {comment.saltiness * 100}
                 </Typography>
+                <LinearProgress variant='determinate' value={comment.saltiness * 100} />
                 <Typography component='time'>
                     {commentDate}
                 </Typography>
                 <Typography>
-                    {comment.comment_text}
+                    "{comment.comment_text}"
                 </Typography>
                 <Fab size='small' aria-label='save'>
                     <SaveIcon />
