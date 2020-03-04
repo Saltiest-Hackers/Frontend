@@ -4,8 +4,10 @@ import { CssBaseline, Container, makeStyles } from '@material-ui/core';
 
 import Home from './components/Home';
 import Feed from './components/Feed';
+import Saved from './components/Saved';
 
 import background from './assets/background.jpg'
+
 
 const useStyles = makeStyles({
   homeColumn: {
@@ -33,6 +35,9 @@ function App() {
         </Route>
         <Route path='/feed'>
           <Feed />
+        </Route>
+        <Route path='/saved'>
+          <Saved />
         </Route>
       </Container>
     </React.Fragment>

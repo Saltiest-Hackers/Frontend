@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { Backdrop, CircularProgress, Typography, makeStyles } from '@material-ui/core';
 
-import dummy from '../assets/MOCK_DATA.json'
 import Comment from './Comment';
 import Filters from './Filters.js';
-import axios from 'axios';
+
 
 const useStyles = makeStyles(theme => ({
     title: {
@@ -57,7 +57,7 @@ const Feed = () => {
                         : <CircularProgress />
                 }
             </Backdrop>
-            <Typography variant='h4'component='h1' className={classes.title}>Comment Feed</Typography>
+            <Typography variant='h4' component='h1' className={classes.title}>Comment Feed</Typography>
             <Filters data={data} display={display} setDisplay={setDisplay} />
             {display.length > 0 ? undefined : <h1 className={classes.error}>No matches</h1>}
             {display.map((comment, index) => {
