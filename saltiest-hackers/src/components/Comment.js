@@ -13,6 +13,15 @@ const useStyles = makeStyles({
     title: {
         fontSize: '1.3rem',
         fontWeight: 'bold',
+    },
+    author: {
+        color: 'inherit',
+        '&:visited': {
+            color: 'inherit',
+        },
+        '&:hover': {
+            color: 'grey',
+        }
     }
 })
 
@@ -30,7 +39,10 @@ const Comment = (props) => {
         <Card className={classes.card}>
             <CardContent>
                 <Typography className={classes.title} component='h2'>
-                    <Link to={`/commenter/${comment.author}`}>{comment.author}</Link>
+                    {/* Only link to user page if not on a user page */}
+                    {props.user ? comment.author
+                                : <Link className={classes.author} to={`/commenter/${comment.author}`}>{comment.author}</Link>
+                    }
                 </Typography>
                 <Typography>
                     Saltiness: {parseFloat((comment.saltiness * 100).toFixed(1))}%

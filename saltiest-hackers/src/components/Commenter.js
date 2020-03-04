@@ -51,7 +51,7 @@ const Commenter = (props) => {
             <Typography variant='h4' component='h1' className={classes.title} >Profile  for {id}</Typography>
             {data.map((comment, index) => {
                 return (
-                    <Comment key={index} comment={comment} />
+                    <Comment key={index} comment={comment} user/>
                 )
             })}
         </React.Fragment>
