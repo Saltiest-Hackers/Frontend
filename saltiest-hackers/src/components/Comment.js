@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, LinearProgress, Fab, Typography, makeStyles } from '@material-ui/core';
 import SaveIcon from '@material-ui/icons/Save';
+import sanitizeHtml from 'sanitize-html-react';
 
 const useStyles = makeStyles({
     card: {
@@ -39,7 +40,10 @@ const Comment = (props) => {
                     {commentDate}
                 </Typography>
                 <Typography>
-                    "{comment.comment_text}"
+                    "{sanitizeHtml(comment.comment_text, {
+                        allowedTags: [],
+                        allowedAttributes: [],
+                    })}"
                 </Typography>
                 {/* Only display the saved icon if the saved prop is present  */}
                 {props.saved ? undefined
