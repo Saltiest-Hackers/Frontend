@@ -40,9 +40,12 @@ const Comment = (props) => {
                 <Typography>
                     "{comment.comment_text}"
                 </Typography>
-                <Fab size='small' aria-label='save' onClick={() => saveComment()}>
-                    <SaveIcon />
-                </Fab>
+                {/* Only display the saved icon if the saved prop is present  */}
+                {props.saved ? undefined
+                             : <Fab size='small' aria-label='save' onClick={() => saveComment()}>
+                                    <SaveIcon />
+                                </Fab>
+                }
             </CardContent>        
         </Card>
     )
