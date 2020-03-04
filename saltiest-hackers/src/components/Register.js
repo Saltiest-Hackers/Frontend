@@ -1,9 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, TextField, Dialog, DialogContent, DialogActions, DialogTitle } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom';
+import { getRegister } from '../actions/register';
 
 const Register = (props) => {
     const history = useHistory();
+    const { newUser, setNewUser } = useState({
+        username: '',
+        password: ''
+    })
+
+    const onChange = e => {
+        setNewUser({
+            ...newUser,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    const onSubmit = e => {
+        e.preventDefault()
+        props.getRegister(newUser, props);
+    }
+
     return (
         <Dialog open={props.open}>
             <DialogTitle id='form-dialog-title'>Register</DialogTitle>
