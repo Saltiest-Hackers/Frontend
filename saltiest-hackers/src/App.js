@@ -5,6 +5,7 @@ import { CssBaseline, Container, makeStyles } from '@material-ui/core';
 import Home from './components/Home';
 import Feed from './components/Feed';
 import Saved from './components/Saved';
+import Nav from './components/Nav';
 
 import background from './assets/background.jpg'
 
@@ -29,6 +30,8 @@ function App() {
   return (
     <React.Fragment>
       <CssBaseline />
+      {/* Render navbar only if not on home */}
+      { location.pathname === '/' ? undefined : <Nav /> }
       <Container component='main' className={location.pathname === '/' ? classes.homeColumn : classes.column } maxWidth='md' >
         <Route exact path='/'>
           <Home />
