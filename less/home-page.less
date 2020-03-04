@@ -1,0 +1,121 @@
+// home
+
+nav{
+    display:flex;
+    justify-content: center;
+    background-color: @nav-background;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    border-bottom: 1px solid @main-background-color;
+    .nav-container{
+        .flex-layout(space-between, center);
+        width: 80%;
+        padding: 1% 0;        .links {
+            .flex-layout(space-between, center);
+            width: 50%;
+        }//links closer
+        a {
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: @nav-font;
+            font-family: 'Oxanium', sans-serif;
+            &:hover{
+                color: @backdrop-color;
+            }//psudo closer
+        }//a closer
+        .logo a {
+            height: 16px;
+        }//logo size
+        @media @phone {
+            padding: 2% 10%;
+            flex-direction: column;            div.links {
+                margin: 2% 0;
+                width: 100%;
+            }//media links closer
+        }//media closer
+        @media @phone {
+            width: 100%;
+        }
+    }//nav-container closer
+}//nav closer
+
+.firstsection{
+	display: flex;
+	flex-direction: column;
+	background-color: @section_one_color;
+	height: 404px;
+	width: 100%;
+	color:white;
+	margin-top: 6%;
+
+	.saltygirl{
+		margin-top: -20px;
+	}
+	
+
+	.salty_text{
+		margin-top: 40px;
+		border-radius: 50%;
+		font-weight:bold;
+		padding: 0 6%;
+	}
+
+	@media @phone {
+	.salty_text{
+		margin-top: -6%;
+	}
+
+}
+
+	.salty_girl{
+		border-radius: 50px;
+
+		@media @phone {
+			margin-top: 10px;
+		}
+
+	}
+}
+
+.secondsection{
+	background-color: #00D1B2;
+	height: 404px;
+	width: 100%;
+	color:white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+@media @phone {
+	.salty_text2{
+		display:none;
+	}
+}
+	.salty_text2{
+		color: white;
+		width: 80%;
+		padding: 0 2%;
+		height: 200px;
+		opacity: 0.4;
+		border-radius: 20px;
+		background-color: black;
+	}
+}
+
+button.tryit{
+		width: 80% !important;
+		background-color: #FF3860;
+		color: white;
+		font-size: 1.8rem;
+		border-radius: 20px;
+		padding: 5px;
+		margin-bottom: 10px;
+	}
+
+footer{
+	.centerText();
+	margin-top: 50px;
+	font-size: 1.4rem;
+}
