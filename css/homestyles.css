@@ -1,0 +1,53 @@
+.nav{
+    color: #3967AD !important;
+  }
+	.centered{
+		text-align: center;
+	}
+
+	img.salty-girl{
+		border-radius: 20px;
+	}
+
+	.saltyHero{
+	font-family: 'Oxanium', cursive ;
+	}
+
+	button.button.is-danger{
+		width: 100%;
+		border-radius: 20px;
+	}
+
+.subnav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+  font-weight: bold;
+}
+
+.flexitem{
+  text-align: center;
+  width: 20%;
+}
+
+.subnav:hover{
+  background-color: crimson;
+  color:white !important;
+}
+
+ @media(min-width: 200px;){
+  .navbar{
+    display: none;
+  }
+ }
+  
+  button.button.is-danger:hover{
+    background-color: yellow;
+    color: black;
+  }
+
+  .active{
+    background-color: yellow;
+  }
