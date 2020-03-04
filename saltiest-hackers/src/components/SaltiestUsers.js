@@ -1,19 +1,59 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { Typography, makeStyles } from '@material-ui/core';
+import { Backdrop, Card, CircularProgress, Typography, makeStyles } from '@material-ui/core';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
     title: {
         color: 'white',
         textAlign: 'center',
         paddingTop: '3%'
     },
-})
+    backdrop: {
+        zIndex: theme.zIndex.drawer + 1,
+        color: '#fff',
+    },
+    backdropError: {
+        zIndex: theme.zIndex.drawer + 1,
+        color: '#f00',
+    },
+}))
 
 const SaltiestUsers = () => {
+    const [loading, setLoading] = useState(false);
+    const [noLoad, setNoLoad] = useState(false);
+    const [data, setData] = useState([]);
     const classes = useStyles();
+    useEffect(() => {
+        setLoading(true);
+        axios.get('https://hn-saltiness.herokuapp.com/topusers')
+             .then((response) => {
+                 setData(response.data)
+                 setLoading(false);
+                })
+             .catch((error) => {
+                 console.error(error)
+                 setNoLoad(true)
+                })
+    }, []);
     return (
-        <Typography variant='h4' component='h1' className={classes.title} >Salt Hall of Fame</Typography>
+        <React.Fragment>
+             <Backdrop open={loading} className={noLoad ? classes.backdropError : classes.backdrop}>
+                {noLoad ? <Typography>Error loading! Please reload</Typography>
+                        : <CircularProgress />
+                }
+            </Backdrop>
+            <Typography variant='h4' component='h1' className={classes.title} >Salt Hall of Fame</Typography>
+            {data.map((user, index) => {
+                return (
+                    <Card>
+                        <Typography>{index + 1}. <Link to={`/commenter/${user.author}`}>{user.author}</Link></Typography>
+                        <Typography>Saltiness: {parseFloat((user.avg_salt * 100).toFixed(1))}%</Typography>
+                        <Typography>Number of comments: {user.n_comments}</Typography>
+                    </Card>
+                )
+            })}
+        </React.Fragment>
     )
 }
 
