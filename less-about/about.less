@@ -1,0 +1,115 @@
+header {
+    .flex-layout(center, center);
+    margin-top: 6%;
+
+    .img-container{
+        width: 50%;
+        @media @phone {
+            display: none;
+        }
+    }
+
+    img {
+        border-radius: 5px;
+    }
+
+    h1 {
+        width: 50%;
+        text-align: center;
+        @media @phone {
+            width: 100%;
+        }
+    }
+
+    @media @tablet {
+        margin-top: 8%;
+        padding: 0 2%;
+    }
+
+    @media @phone {
+        margin-top: 20%;
+    }
+}
+
+.info {
+    margin: 3% 0;
+    background-color: @info-background;
+    display: flex;
+    padding: 3% 3%;
+
+    a {
+        color: @white;
+    }
+
+    .person {
+        margin-left: 2%;
+        margin-top: 2%;
+        width: 65%;
+        p{
+            margin-top: 2%;
+        }
+        .title {
+            .flex-layout(space-between, flex-end);
+            border-bottom: 1px solid @main-background-color;
+        }
+    }
+
+    .img{
+        display: flex;
+        justify-content: center;
+        width: 35%;
+
+        img {
+            border-radius: 50%;
+            border: 2px solid @main-background-color;
+            max-width: 300px;
+            width: 100%;
+            max-height: 300px;
+            height: 100%;
+        }
+    }
+
+    @media @tablet {
+        align-items: center;
+        justify-content: space-between;
+        .img {
+            max-width: 225px;
+            max-height: 225px;
+        }
+    }
+
+    @media @phone {
+        flex-direction: column-reverse;
+        margin: 3%;
+
+        .person {
+            width: 100%;
+            margin: 2% 0;
+        }
+        .img{
+            width: 100%;
+            justify-content: center;
+            margin: 3% 0;
+            img{
+                max-width: 200px;
+                max-height: 200px;
+            }
+        }
+    }
+}
+
+.info:nth-child(2n){
+    background-color: @white;
+    flex-direction: row-reverse;
+    color: @main-background-color;
+    a {
+        color: @main-background-color;
+    }
+    .person{
+        margin-left: 0;
+        margin-right: 2%;
+    }
+    @media @phone {
+        flex-direction: column-reverse;
+    }
+}
