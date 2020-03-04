@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import { Card, CardContent, LinearProgress, Fab, Typography, makeStyles } from '@material-ui/core';
 import SaveIcon from '@material-ui/icons/Save';
 
@@ -28,7 +29,7 @@ const Comment = (props) => {
         <Card className={classes.card}>
             <CardContent>
                 <Typography className={classes.title} component='h2'>
-                    {comment.author}
+                    <Link to={`/commenter/${comment.author}`}>{comment.author}</Link>
                 </Typography>
                 <Typography>
                     Saltiness: {comment.saltiness * 100}

@@ -3,6 +3,9 @@ import { AppBar, Toolbar, Typography, makeStyles, withTheme } from '@material-ui
 import { NavLink } from 'react-router-dom';
 
 const useStyles = makeStyles({
+    navBar: {
+        backgroundColor: '#5f5f5f',
+    },
     logo: {
         fontSize: '1.8rem',
     },
@@ -25,12 +28,13 @@ const useStyles = makeStyles({
 const Nav = (props) => {
     const classes = useStyles();
     return (
-        <AppBar position='sticky'>
+        <AppBar className={classes.navBar} position='sticky'>
             <Toolbar className={classes.toolbar}>
                 <Typography className={classes.logo}>🧂 Salty Hackers</Typography>
                 <nav className={classes.nav}>
                     <NavLink className={classes.navLink} to='/feed'>Home</NavLink>
                     <NavLink className={classes.navLink} to='/saved'>Saved</NavLink>
+                    {/* <NavLink className={classes.navLink} to='/saved'>Saltiest Users</NavLink> */}
                 </nav>
             </Toolbar>
         </AppBar>

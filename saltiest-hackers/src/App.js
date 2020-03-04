@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Feed from './components/Feed';
 import Saved from './components/Saved';
 import Nav from './components/Nav';
+import Commenter from './components/Commenter';
 
 import background from './assets/background.jpg'
 
@@ -41,6 +42,9 @@ function App() {
         </Route>
         <Route path='/saved'>
           <Saved />
+        </Route>
+        <Route path='/commenter/:id'>
+          <Commenter />
         </Route>
       </Container>
     </React.Fragment>
