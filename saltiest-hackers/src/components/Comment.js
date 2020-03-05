@@ -39,6 +39,7 @@ const useStyles = makeStyles(theme => ({
     saveButton: {
         backgroundColor: 'darkgrey',
         marginLeft: '95%',
+        marginTop: '2%',
         [theme.breakpoints.down('sm')]: {
             marginLeft: '90%',
         },
