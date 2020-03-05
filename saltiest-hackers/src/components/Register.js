@@ -1,20 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, TextField, Dialog, DialogContent, DialogActions, DialogTitle } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-import axios from 'axios';
+
+import { axiosWithAuth } from '../utils/axiosWithAuth';
+import { getRegister } from '../actions/register';
+
 
 const Register = (props) => {
     // create history object so we can use it to change pages on submit
     const history = useHistory();
+
     // pull form methods from useForm
     const { register, handleSubmit, errors } = useForm();
-    // submission function
-    const onSubmit = (values) => {
-        axios.post('https://reqres.in/api/users', values)
-             .then(response => (console.log(response)));
-        history.push('/feed');
+
+
+    const { newUser, setNewUser } = useState({
+        username: '',
+        password: ''
+    })
+
+    const onChange = e => {
+        setNewUser({
+            ...newUser,
+            [e.target.name]: e.target.value
+        })
     }
+
+    const onSubmit = e => {
+        e.preventDefault()
+        props.getRegister(newUser, props);
+    }
+
     return (
         <Dialog open={props.open}>
             <DialogTitle id='form-dialog-title'>Register</DialogTitle>

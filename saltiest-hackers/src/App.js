@@ -1,6 +1,7 @@
 import React from 'react';
-import { Route, useHistory } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, useHistory } from 'react-router-dom';
 import { CssBaseline, Container, makeStyles } from '@material-ui/core';
+import  PrivateRoute  from './components/PrivateRoute';
 
 import Home from './components/Home';
 import Feed from './components/Feed';
@@ -30,28 +31,18 @@ function App() {
   const { location } = useHistory();
   const classes = useStyles();
   return (
-    <React.Fragment>
-      <CssBaseline />
-      {/* Render navbar only if not on home */}
-      { location.pathname === '/' ? undefined : <Nav /> }
-      <Container component='main' className={location.pathname === '/' ? classes.homeColumn : classes.column } maxWidth='md' >
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route path='/feed'>
-          <Feed />
-        </Route>
-        <Route path='/saved'>
-          <Saved />
-        </Route>
-        <Route path='/commenter/:id'>
-          <Commenter />
-        </Route>
-        <Route path='/saltiest'>
-          <SaltiestUsers />
-        </Route>
-      </Container>
-    </React.Fragment>
+    // <React.Fragment>
+      // <CssBaseline />
+      // <Container maxWidth='md' >
+    <Router>
+    <Switch>
+        <Route exact path='/' component={Home}/>
+        <PrivateRoute path='/feed' component={Feed}/>
+        <PrivateRoute path='/saved' component={Saved}/>
+        <PrivateRoute path='/saltiest' component={SaltiestUsers}/>
+        <PrivateRoute path='/commenter/:id' component={Commenter}/>
+    </Switch>
+    </Router>
   );
 }
 

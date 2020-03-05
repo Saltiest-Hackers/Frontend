@@ -1,24 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, TextField, Dialog, DialogContent, DialogActions, DialogTitle } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-import axios from 'axios';
+
+
+import { axiosWithAuth } from '../utils/axiosWithAuth';
+import { connect } from 'react-redux'
+import { getLogin } from '../actions/login';
+
 
 const Login = (props) => {
     // create history object so we can use it to change pages on submit
     const history = useHistory();
+
     // pull form methods from useForm
     const { register, handleSubmit, errors } = useForm();
-    // submission function
-    const onSubmit = (values) => {
-        axios.post('https://reqres.in/api/users', values)
-             .then(response => (console.log(response)));
-        history.push('/feed');
+
+    const [credentials, setCredentials] = useState({
+        username: '',
+        password: ''
+    })
+
+
+    const onChange = e => {
+       setCredentials({
+           ...credentials,
+           [e.target.name]: e.target.value
+       }) 
     }
+
+    const onSubmit = e => {
+        e.preventDefault()
+        props.getLogin(credentials, props);
+
+    }
+
+
     return (
-        <Dialog open={props.open}>
+        <Dialog open={props.open} onSubmit={onSubmit}>
             <DialogTitle id='form-dialog-title'>Login</DialogTitle>
             <DialogContent>
+
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <TextField label='Username' 
                             variant='outlined' 
@@ -45,10 +67,15 @@ const Login = (props) => {
                 </form>
             </DialogContent>
             <DialogActions>    
+                      
                 <Button onClick={() => props.opener(false)}>Cancel</Button>
             </DialogActions>
         </Dialog>
     )
 }
 
-export default Login;
+const mapStateToProps = state => ({
+    user: state.user
+})
+
+export default connect(mapStateToProps, {getLogin})(Login);
