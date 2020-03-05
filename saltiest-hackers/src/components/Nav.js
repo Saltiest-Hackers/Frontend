@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, makeStyles, withTheme } from '@material-ui/core';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
     navBar: {
@@ -32,9 +32,9 @@ const Nav = (props) => {
             <Toolbar className={classes.toolbar}>
                 <Typography className={classes.logo}>🧂 Salty Hackers</Typography>
                 <nav className={classes.nav}>
-                    <NavLink className={classes.navLink} to='/feed'>Home</NavLink>
-                    <NavLink className={classes.navLink} to='/saved'>Saved</NavLink>
-                    <NavLink className={classes.navLink} to='/saltiest'>Saltiest Users</NavLink>
+                    <Link className={classes.navLink} to='/feed'>Home</Link>
+                    <Link className={classes.navLink} to='/saved'>Saved</Link>
+                    <Link className={classes.navLink} to='/saltiest'>Saltiest Users</Link>
                 </nav>
             </Toolbar>
         </AppBar>
