@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 })
 
 function App() {
-  const { location } = useHistory();
+  // const { location } = useHistory();
   const classes = useStyles();
   return (
     // <React.Fragment>

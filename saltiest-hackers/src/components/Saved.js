@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+
 import { Typography, makeStyles } from '@material-ui/core';
 
 import dummy from '../assets/MOCK_DATA.json'
