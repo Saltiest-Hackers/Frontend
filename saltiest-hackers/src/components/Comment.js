@@ -74,7 +74,10 @@ const Comment = (props) => {
                         {commentDate}
                     </Typography>
                     <Typography className={classes.comment}>
-                        "{comment.comment_text}"
+                        "{sanitizeHtml(comment.comment_text, {
+                                allowedTags: [],
+                                allowedAttributes: [],
+                            })}"
                     </Typography>
                     {/* Only display the saved icon if the saved prop is present  */}
                     {props.saved ? undefined
