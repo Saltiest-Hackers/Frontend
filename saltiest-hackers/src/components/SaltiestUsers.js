@@ -68,7 +68,7 @@ const SaltiestUsers = () => {
             <section className={classes.users}>
                 {data.map((user, index) => {
                     return (
-                        <Card className={classes.userCard}>
+                        <Card key={index} className={classes.userCard}>
                             <Typography>{index + 1}. <Link className={classes.author} to={`/commenter/${user.author}`}>{user.author}</Link></Typography>
                             <Typography>Saltiness: {parseFloat((user.avg_salt * 100).toFixed(1))}%</Typography>
                             <Typography>Number of comments: {user.n_comments}</Typography>
