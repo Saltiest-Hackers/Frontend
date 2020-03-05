@@ -21,13 +21,16 @@ const useStyles = makeStyles(theme => ({
     users: {
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
     },
     userCard: {
         margin: '0 auto',
         width: '30%',
         padding: '3%',
         marginBottom: '2%',
+        [theme.breakpoints.down('sm')]: {
+            width: '75%',
+        },
     },
     author: {
         color: 'inherit',
