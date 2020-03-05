@@ -8,7 +8,7 @@ export const axiosWithAuth = () => {
         headers: {
             authorization: token
         },
-        baseUrl: 'https://hn-saltiness.herokuapp.com/login'
+        baseUrl: 'https://saltiest-hacker-news-trolls.herokuapp.com/api/user/login'
     });
 
 };

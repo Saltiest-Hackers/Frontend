@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     }
 })
 
-const Home = () => {
+const Home = (props) => {
     const [loginOpen, setLoginOpen ] = useState(false);
     const [registerOpen, setRegisterOpen ] = useState(false);
     const classes = useStyles();
@@ -31,8 +31,8 @@ const Home = () => {
                 <Button variant='contained' className={classes.button} onClick={() => setLoginOpen(true)}>Login</Button>
                 <Button variant='contained' className={classes.button} onClick={() => setRegisterOpen(true)}>Register</Button>
             </div>
-            <Login open={loginOpen} opener={setLoginOpen} />
-            <Register open={registerOpen} opener={setRegisterOpen} />
+            <Login open={loginOpen} opener={setLoginOpen} {...props}/>
+            <Register open={registerOpen} opener={setRegisterOpen} {...props}/>
         </React.Fragment>    
     )
 }

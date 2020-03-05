@@ -1,4 +1,4 @@
-import { axiosWithAuth } from "../utils/axiosWithAuth"
+
 import axios from 'axios';
 
 export const FETCH_LOGIN_SUCCESS = 'FETCH_LOGIN_SUCCESS';
@@ -9,7 +9,7 @@ export const getLogin = (user, props) => dispatch => {
     .then( res => {
         dispatch({type: FETCH_LOGIN_SUCCESS, payload: res.data})
         localStorage.setItem('token', res.data.token)
-        props.history.push('/feed')
+        
     })
     .catch( error => {
         dispatch({type: FETCH_LOGIN_ERROR, payload: error})

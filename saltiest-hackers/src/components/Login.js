@@ -4,14 +4,12 @@ import { useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
 
-import { axiosWithAuth } from '../utils/axiosWithAuth';
 import { connect } from 'react-redux'
 import { getLogin } from '../actions/login';
 
 
 const Login = (props) => {
     // create history object so we can use it to change pages on submit
-    const history = useHistory();
 
     // pull form methods from useForm
     const { register, handleSubmit, errors } = useForm();
@@ -30,8 +28,10 @@ const Login = (props) => {
     }
 
     const onSubmit = e => {
-        e.preventDefault()
+        // e.preventDefault()
+        console.log(credentials)
         props.getLogin(credentials, props);
+        props.history.push('/feed')
 
     }
 
@@ -51,6 +51,8 @@ const Login = (props) => {
                             inputRef={register({ required: true })}
                             error={errors.username ? true : false }
                             helperText={errors.username ? 'Username required' : " " }
+                            onChange={onChange}
+                            value={credentials.username}
                     />
                     <TextField label='Password' 
                             type='password' 
@@ -62,6 +64,8 @@ const Login = (props) => {
                             inputRef={register({ required: true })}
                             error={errors.password ? true : false }
                             helperText={errors.password ? 'Password required' : " " } 
+                            onChange={onChange}
+                            value={credentials.password}
                     />
                     <Button type='submit' variant='outlined'>Login</Button>
                 </form>

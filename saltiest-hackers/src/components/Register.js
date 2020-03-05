@@ -1,21 +1,17 @@
 import React, { useState } from 'react';
 import { Button, TextField, Dialog, DialogContent, DialogActions, DialogTitle } from '@material-ui/core';
-import { Link, useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-
-import { axiosWithAuth } from '../utils/axiosWithAuth';
+import { connect } from 'react-redux';
 import { getRegister } from '../actions/register';
-
 
 const Register = (props) => {
     // create history object so we can use it to change pages on submit
-    const history = useHistory();
 
     // pull form methods from useForm
     const { register, handleSubmit, errors } = useForm();
 
 
-    const { newUser, setNewUser } = useState({
+    const [ newUser, setNewUser ] = useState({
         username: '',
         password: ''
     })
@@ -27,16 +23,18 @@ const Register = (props) => {
         })
     }
 
-    const onSubmit = e => {
-        e.preventDefault()
+    const onlySubmit = e => {
+        console.log(newUser)
+        e.preventDefault();
         props.getRegister(newUser, props);
+        props.history.push('/feed')
     }
 
     return (
         <Dialog open={props.open}>
             <DialogTitle id='form-dialog-title'>Register</DialogTitle>
             <DialogContent>
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form onSubmit={onlySubmit}>
                     <TextField label='Username' 
                             variant='outlined' 
                             fullWidth={true}
@@ -46,6 +44,8 @@ const Register = (props) => {
                             inputRef={register({ required: true })}
                             error={errors.username ? true : false }
                             helperText={errors.username ? 'Username required' : " " }
+                            value={props.setNewUser}
+                            onChange={onChange}
                     />
                     <TextField label='Password' 
                             type='password' 
@@ -57,8 +57,10 @@ const Register = (props) => {
                             inputRef={register({ required: true })}
                             error={errors.password ? true : false }
                             helperText={errors.password ? 'Password required' : " " }
+                            value={props.setNewUser}
+                            onChange={onChange}
                     />
-                    <Button variant='outlined' type='submit'>Register</Button>
+                    <Button variant='outlined' type='submit' onSubmit={onlySubmit}>Register</Button>
                 </form>
             </DialogContent>
             <DialogActions>
@@ -68,4 +70,7 @@ const Register = (props) => {
     )
 }
 
-export default Register;
+export default connect(
+    null, 
+    {getRegister}
+) (Register);
