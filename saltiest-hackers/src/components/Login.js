@@ -1,13 +1,22 @@
 import React, { useState } from 'react';
 import { Button, TextField, Dialog, DialogContent, DialogActions, DialogTitle } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
+
+
 import { axiosWithAuth } from '../utils/axiosWithAuth';
 import { connect } from 'react-redux'
 import { getLogin } from '../actions/login';
 
+
 const Login = (props) => {
+    // create history object so we can use it to change pages on submit
     const history = useHistory();
-    const { credentials, setCredentials} = useState({
+
+    // pull form methods from useForm
+    const { register, handleSubmit, errors } = useForm();
+
+    const [credentials, setCredentials] = useState({
         username: '',
         password: ''
     })
@@ -26,30 +35,39 @@ const Login = (props) => {
 
     }
 
+
     return (
         <Dialog open={props.open} onSubmit={onSubmit}>
             <DialogTitle id='form-dialog-title'>Login</DialogTitle>
             <DialogContent>
-                <TextField label='Username' 
-                           variant='outlined' 
-                           fullWidth='true' 
-                           margin='normal' 
-                           autocomplete='username' 
-                           onChange={onChange}
-                           value={props.username}
-                />
-                <TextField label='Password' 
-                           type='password' 
-                           variant='outlined' 
-                           fullWidth='true' 
-                           margin='normal' 
-                           autocomplete='current-password'
-                           onChange={onChange}
-                           value={props.passowrd} 
-                />
+
+                <form onSubmit={handleSubmit(onSubmit)}>
+                    <TextField label='Username' 
+                            variant='outlined' 
+                            fullWidth={true} 
+                            margin='normal' 
+                            autoComplete='username'
+                            name='username'
+                            inputRef={register({ required: true })}
+                            error={errors.username ? true : false }
+                            helperText={errors.username ? 'Username required' : " " }
+                    />
+                    <TextField label='Password' 
+                            type='password' 
+                            variant='outlined' 
+                            fullWidth={true} 
+                            margin='normal' 
+                            autoComplete='current-password'
+                            name='password'
+                            inputRef={register({ required: true })}
+                            error={errors.password ? true : false }
+                            helperText={errors.password ? 'Password required' : " " } 
+                    />
+                    <Button type='submit' variant='outlined'>Login</Button>
+                </form>
             </DialogContent>
-            <DialogActions>
-                <Button onSubmit={onSubmit} onClick={() => onSubmit}>Login</Button>
+            <DialogActions>    
+                      
                 <Button onClick={() => props.opener(false)}>Cancel</Button>
             </DialogActions>
         </Dialog>

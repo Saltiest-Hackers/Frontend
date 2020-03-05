@@ -1,18 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Backdrop, CircularProgress, Typography, makeStyles } from '@material-ui/core';
 
 import Comment from './Comment';
-import Filters from './Filters.js';
-
 
 const useStyles = makeStyles(theme => ({
     title: {
-        color: 'white',
-        textAlign: 'center',
-        paddingTop: '3%'
-    },
-    error: {
         color: 'white',
         textAlign: 'center',
         paddingTop: '3%'
@@ -25,20 +19,20 @@ const useStyles = makeStyles(theme => ({
         zIndex: theme.zIndex.drawer + 1,
         color: '#f00',
     },
-}))
+}));
 
-const Feed = () => {
+const Commenter = (props) => {
+    const [data, setData] = useState([]);
     const [loading, setLoading] = useState(false);
     const [noLoad, setNoLoad] = useState(false);
-    const [data, setData] = useState([]);
-    const [display, setDisplay] = useState([]);
-    const classes = useStyles();
-    // axios call to populate state with data from database
+    const { id } = useParams();
+    // Get data for individual commenter
+    // https://hn-saltiness.herokuapp.com/user/${id}
     useEffect(() => {
         setLoading(true);
-        axios.get('https://hn-saltiness.herokuapp.com/topcomments')
+        axios.get(`https://hn-saltiness.herokuapp.com/user/${id}`)
              .then((response) => {
-                 setData(response.data)
+                 setData(response.data);
                  setLoading(false);
                 })
              .catch((error) => {
@@ -46,27 +40,22 @@ const Feed = () => {
                  setNoLoad(true)
                 })
     }, []);
-    // useEffect to update the display to match most recently called data
-    useEffect(() => {
-        setDisplay(data);
-    }, [data])
-    return (
+    const classes = useStyles();
+    return(
         <React.Fragment>
             <Backdrop open={loading} className={noLoad ? classes.backdropError : classes.backdrop}>
                 {noLoad ? <Typography>Error loading! Please reload</Typography>
                         : <CircularProgress />
                 }
             </Backdrop>
-            <Typography variant='h4' component='h1' className={classes.title}>Comment Feed</Typography>
-            <Filters data={data} display={display} setDisplay={setDisplay} />
-            {display.length > 0 ? undefined : <h1 className={classes.error}>No matches</h1>}
-            {display.map((comment, index) => {
+            <Typography variant='h4' component='h1' className={classes.title} >Profile  for {id}</Typography>
+            {data.map((comment, index) => {
                 return (
-                    <Comment key={index} comment={comment} />
+                    <Comment key={index} comment={comment} user/>
                 )
             })}
         </React.Fragment>
     )
 }
 
-export default Feed;
+export default Commenter;

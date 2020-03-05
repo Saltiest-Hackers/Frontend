@@ -1,100 +1,802 @@
-[{"saltiness":45,"username":"reisikovitsh0","comment":"habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea"},
-{"saltiness":56,"username":"lbarosch1","comment":"quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis"},
-{"saltiness":91,"username":"amasedon2","comment":"quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean"},
-{"saltiness":99,"username":"ehemshall3","comment":"lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida"},
-{"saltiness":67,"username":"kbroxton4","comment":"habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla"},
-{"saltiness":7,"username":"afilipovic5","comment":"porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam"},
-{"saltiness":43,"username":"selijah6","comment":"lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec"},
-{"saltiness":7,"username":"rneave7","comment":"dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse"},
-{"saltiness":91,"username":"kdudding8","comment":"ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin"},
-{"saltiness":51,"username":"nlawrie9","comment":"integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio"},
-{"saltiness":7,"username":"glongmana","comment":"luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac"},
-{"saltiness":3,"username":"brapellib","comment":"lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat"},
-{"saltiness":99,"username":"apentelowc","comment":"sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo"},
-{"saltiness":19,"username":"cvasilevichd","comment":"in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus"},
-{"saltiness":86,"username":"fullocke","comment":"semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer"},
-{"saltiness":57,"username":"mhallenf","comment":"eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam"},
-{"saltiness":78,"username":"jlaurentg","comment":"feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa"},
-{"saltiness":69,"username":"elambolh","comment":"orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus"},
-{"saltiness":94,"username":"pherityi","comment":"pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget"},
-{"saltiness":31,"username":"nbenleyj","comment":"ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae"},
-{"saltiness":24,"username":"bohollegank","comment":"mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in"},
-{"saltiness":40,"username":"jheinll","comment":"lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus"},
-{"saltiness":70,"username":"vnewhousem","comment":"non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque"},
-{"saltiness":82,"username":"dgoudan","comment":"proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere"},
-{"saltiness":73,"username":"adilleyo","comment":"erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque"},
-{"saltiness":9,"username":"aforbearp","comment":"aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas"},
-{"saltiness":30,"username":"amcneillyq","comment":"turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum"},
-{"saltiness":89,"username":"oeddoesr","comment":"faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque"},
-{"saltiness":96,"username":"hlawteys","comment":"pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes"},
-{"saltiness":5,"username":"tpratleyt","comment":"sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non"},
-{"saltiness":66,"username":"vrodgersu","comment":"mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis"},
-{"saltiness":49,"username":"abassov","comment":"eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu"},
-{"saltiness":42,"username":"jmckanew","comment":"at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh"},
-{"saltiness":93,"username":"osevierx","comment":"amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla"},
-{"saltiness":14,"username":"kklusy","comment":"diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum"},
-{"saltiness":12,"username":"lmosdillz","comment":"nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper"},
-{"saltiness":1,"username":"crapley10","comment":"magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra"},
-{"saltiness":73,"username":"aroback11","comment":"amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget"},
-{"saltiness":40,"username":"rneames12","comment":"tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo"},
-{"saltiness":86,"username":"nlawther13","comment":"ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien"},
-{"saltiness":84,"username":"bpoplee14","comment":"luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis"},
-{"saltiness":36,"username":"lbanasik15","comment":"sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis"},
-{"saltiness":26,"username":"rploughwright16","comment":"montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet"},
-{"saltiness":39,"username":"mdeblasio17","comment":"quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer"},
-{"saltiness":1,"username":"dvesque18","comment":"non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis"},
-{"saltiness":99,"username":"theinish19","comment":"vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in"},
-{"saltiness":49,"username":"hfeehan1a","comment":"congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque"},
-{"saltiness":81,"username":"rblockwell1b","comment":"id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus"},
-{"saltiness":17,"username":"dmckeowon1c","comment":"nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus"},
-{"saltiness":49,"username":"gwimbridge1d","comment":"ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et"},
-{"saltiness":85,"username":"showlin1e","comment":"diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam"},
-{"saltiness":78,"username":"arogerot1f","comment":"maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam"},
-{"saltiness":79,"username":"tgravener1g","comment":"eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim"},
-{"saltiness":100,"username":"tmckevitt1h","comment":"enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque"},
-{"saltiness":53,"username":"pardling1i","comment":"quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus"},
-{"saltiness":13,"username":"rsherratt1j","comment":"orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut"},
-{"saltiness":57,"username":"ntearney1k","comment":"blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque"},
-{"saltiness":33,"username":"sdat1l","comment":"pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam"},
-{"saltiness":29,"username":"aletten1m","comment":"molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna"},
-{"saltiness":20,"username":"mmcshirie1n","comment":"ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor"},
-{"saltiness":49,"username":"stotterdell1o","comment":"non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat"},
-{"saltiness":18,"username":"ppoutress1p","comment":"lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem"},
-{"saltiness":79,"username":"vcamilleri1q","comment":"elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec"},
-{"saltiness":20,"username":"rballam1r","comment":"mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris"},
-{"saltiness":6,"username":"lmougeot1s","comment":"vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet"},
-{"saltiness":26,"username":"idesremedios1t","comment":"libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum"},
-{"saltiness":38,"username":"wshearman1u","comment":"nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis"},
-{"saltiness":63,"username":"adiggar1v","comment":"quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur"},
-{"saltiness":33,"username":"seadon1w","comment":"integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique"},
-{"saltiness":31,"username":"sglaum1x","comment":"dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel"},
-{"saltiness":88,"username":"lrighy1y","comment":"rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris"},
-{"saltiness":68,"username":"dposen1z","comment":"quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor"},
-{"saltiness":98,"username":"drival20","comment":"pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus"},
-{"saltiness":26,"username":"dstatersfield21","comment":"feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac"},
-{"saltiness":29,"username":"aborham22","comment":"nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit"},
-{"saltiness":4,"username":"ggerleit23","comment":"est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros"},
-{"saltiness":50,"username":"ucrispin24","comment":"viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet"},
-{"saltiness":14,"username":"fgrahl25","comment":"ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac"},
-{"saltiness":8,"username":"lalthorp26","comment":"tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis"},
-{"saltiness":61,"username":"obunn27","comment":"faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam"},
-{"saltiness":84,"username":"efrayne28","comment":"amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia"},
-{"saltiness":4,"username":"jsecombe29","comment":"duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan"},
-{"saltiness":1,"username":"sflips2a","comment":"pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis"},
-{"saltiness":59,"username":"acalbaithe2b","comment":"morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum"},
-{"saltiness":69,"username":"jlethbrig2c","comment":"pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis"},
-{"saltiness":99,"username":"dperillo2d","comment":"hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at"},
-{"saltiness":4,"username":"sdrioli2e","comment":"sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla"},
-{"saltiness":43,"username":"hgeely2f","comment":"fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam"},
-{"saltiness":65,"username":"mmcsparran2g","comment":"mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in"},
-{"saltiness":60,"username":"dadriano2h","comment":"eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum"},
-{"saltiness":24,"username":"nwankling2i","comment":"adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus"},
-{"saltiness":63,"username":"hdimock2j","comment":"posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus"},
-{"saltiness":43,"username":"ihegg2k","comment":"donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor"},
-{"saltiness":16,"username":"kbaudichon2l","comment":"ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque"},
-{"saltiness":89,"username":"eschultz2m","comment":"odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed"},
-{"saltiness":94,"username":"reagles2n","comment":"augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus"},
-{"saltiness":7,"username":"gbanasik2o","comment":"amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia"},
-{"saltiness":81,"username":"mradborn2p","comment":"eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a"},
-{"saltiness":17,"username":"edeering2q","comment":"ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam"},
-{"saltiness":27,"username":"lpankettman2r","comment":"vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien"}]
+[
+    {
+        "author": "brooklyndude",
+        "comment_text": "No.",
+        "id": 21872188,
+        "parent_id": 21862367,
+        "saltiness": 1,
+        "time": 1577197099
+    },
+    {
+        "author": "edflsafoiewq",
+        "comment_text": "No.",
+        "id": 21982055,
+        "parent_id": 21980998,
+        "saltiness": 1,
+        "time": 1578417688
+    },
+    {
+        "author": "burrows",
+        "comment_text": "Nerd.",
+        "id": 21805569,
+        "parent_id": 21805467,
+        "saltiness": 1,
+        "time": 1576520860
+    },
+    {
+        "author": "Pusha_Drugz",
+        "comment_text": "sad :(",
+        "id": 21990162,
+        "parent_id": 21989961,
+        "saltiness": 1,
+        "time": 1578479615
+    },
+    {
+        "author": "sunyata",
+        "comment_text": "Gross!",
+        "id": 21975942,
+        "parent_id": 21975821,
+        "saltiness": 1,
+        "time": 1578362162
+    },
+    {
+        "author": "TheTruth321",
+        "comment_text": "Shame.",
+        "id": 22058083,
+        "parent_id": 22057322,
+        "saltiness": 1,
+        "time": 1579119889
+    },
+    {
+        "author": "FFY00",
+        "comment_text": ":O",
+        "id": 22405715,
+        "parent_id": 22405236,
+        "saltiness": 1,
+        "time": 1582563058
+    },
+    {
+        "author": "robk",
+        "comment_text": "Jerk",
+        "id": 21775863,
+        "parent_id": 21773216,
+        "saltiness": 1,
+        "time": 1576181538
+    },
+    {
+        "author": "retox",
+        "comment_text": "Pathetic.",
+        "id": 21833545,
+        "parent_id": 21833377,
+        "saltiness": 1,
+        "time": 1576750586
+    },
+    {
+        "author": "Borog30",
+        "comment_text": "Low",
+        "id": 21893091,
+        "parent_id": 21892714,
+        "saltiness": 1,
+        "time": 1577470800
+    },
+    {
+        "author": "mosselman",
+        "comment_text": "Wtf?",
+        "id": 22234606,
+        "parent_id": 22234343,
+        "saltiness": 1,
+        "time": 1580817792
+    },
+    {
+        "author": "Katzenjammer",
+        "comment_text": "Disgusting",
+        "id": 21761692,
+        "parent_id": 21761376,
+        "saltiness": 1,
+        "time": 1576066035
+    },
+    {
+        "author": "joobus",
+        "comment_text": "No.",
+        "id": 22351730,
+        "parent_id": 22351255,
+        "saltiness": 1,
+        "time": 1581980187
+    },
+    {
+        "author": "marta_morena",
+        "comment_text": "no",
+        "id": 22349233,
+        "parent_id": 22345337,
+        "saltiness": 1,
+        "time": 1581961728
+    },
+    {
+        "author": "dhosek",
+        "comment_text": "No.",
+        "id": 22349076,
+        "parent_id": 22349067,
+        "saltiness": 1,
+        "time": 1581959947
+    },
+    {
+        "author": "quotemstr",
+        "comment_text": "Brutal.",
+        "id": 21709846,
+        "parent_id": 21709496,
+        "saltiness": 1,
+        "time": 1575518043
+    },
+    {
+        "author": "bayesian_horse",
+        "comment_text": "Depressing.",
+        "id": 21711215,
+        "parent_id": 21710564,
+        "saltiness": 1,
+        "time": 1575540843
+    },
+    {
+        "author": "tony-allan",
+        "comment_text": "No",
+        "id": 21877904,
+        "parent_id": 21877422,
+        "saltiness": 1,
+        "time": 1577269076
+    },
+    {
+        "author": "mailslot",
+        "comment_text": "wtf",
+        "id": 21832474,
+        "parent_id": 21825100,
+        "saltiness": 1,
+        "time": 1576736666
+    },
+    {
+        "author": "quotemstr",
+        "comment_text": "No.",
+        "id": 21774092,
+        "parent_id": 21760191,
+        "saltiness": 1,
+        "time": 1576172192
+    },
+    {
+        "author": "baby",
+        "comment_text": "no",
+        "id": 21877493,
+        "parent_id": 21877422,
+        "saltiness": 1,
+        "time": 1577260606
+    },
+    {
+        "author": "mrtweetyhack",
+        "comment_text": "Shocking!",
+        "id": 21800438,
+        "parent_id": 21796173,
+        "saltiness": 1,
+        "time": 1576464212
+    },
+    {
+        "author": "ltratt",
+        "comment_text": "No.",
+        "id": 22099201,
+        "parent_id": 22099097,
+        "saltiness": 1,
+        "time": 1579532242
+    },
+    {
+        "author": "sethgoldsteen",
+        "comment_text": "No",
+        "id": 22017267,
+        "parent_id": 22016212,
+        "saltiness": 1,
+        "time": 1578704740
+    },
+    {
+        "author": "wyxuan",
+        "comment_text": "Dupe",
+        "id": 22321252,
+        "parent_id": 22320522,
+        "saltiness": 1,
+        "time": 1581626603
+    },
+    {
+        "author": "Nextgrid",
+        "comment_text": "No worries!",
+        "id": 22105061,
+        "parent_id": 22105046,
+        "saltiness": 1,
+        "time": 1579593074
+    },
+    {
+        "author": "fuckyah",
+        "comment_text": "no",
+        "id": 22233342,
+        "parent_id": 22233036,
+        "saltiness": 1,
+        "time": 1580802919
+    },
+    {
+        "author": "mattbillenstein",
+        "comment_text": "WORSE",
+        "id": 22029834,
+        "parent_id": 22029445,
+        "saltiness": 1,
+        "time": 1578866515
+    },
+    {
+        "author": "dillonmckay",
+        "comment_text": "No.",
+        "id": 22181490,
+        "parent_id": 22178135,
+        "saltiness": 1,
+        "time": 1580311473
+    },
+    {
+        "author": "ganstyles",
+        "comment_text": "No.",
+        "id": 22352040,
+        "parent_id": 22351942,
+        "saltiness": 1,
+        "time": 1581982830
+    },
+    {
+        "author": "tarique313",
+        "comment_text": "No",
+        "id": 22033669,
+        "parent_id": 22033434,
+        "saltiness": 1,
+        "time": 1578916827
+    },
+    {
+        "author": "typeformer",
+        "comment_text": "Wtf",
+        "id": 22253111,
+        "parent_id": 22233074,
+        "saltiness": 1,
+        "time": 1580958282
+    },
+    {
+        "author": "notaplumber",
+        "comment_text": "No.",
+        "id": 21707970,
+        "parent_id": 21707939,
+        "saltiness": 1,
+        "time": 1575498809
+    },
+    {
+        "author": "thatdrew",
+        "comment_text": "wrong.",
+        "id": 22407657,
+        "parent_id": 22393828,
+        "saltiness": 1,
+        "time": 1582573583
+    },
+    {
+        "author": "duhast",
+        "comment_text": "MAD",
+        "id": 22073668,
+        "parent_id": 22071641,
+        "saltiness": 1,
+        "time": 1579259223
+    },
+    {
+        "author": "musicale",
+        "comment_text": "No.",
+        "id": 22243140,
+        "parent_id": 22242416,
+        "saltiness": 1,
+        "time": 1580866053
+    },
+    {
+        "author": "techterrier",
+        "comment_text": "No.",
+        "id": 22246128,
+        "parent_id": 22246037,
+        "saltiness": 1,
+        "time": 1580905448
+    },
+    {
+        "author": "samkone",
+        "comment_text": "Stupid",
+        "id": 21833819,
+        "parent_id": 21833377,
+        "saltiness": 1,
+        "time": 1576753599
+    },
+    {
+        "author": "starpilot",
+        "comment_text": "No!",
+        "id": 22072644,
+        "parent_id": 22068826,
+        "saltiness": 1,
+        "time": 1579246333
+    },
+    {
+        "author": "agigao",
+        "comment_text": "NO.",
+        "id": 22033914,
+        "parent_id": 22033434,
+        "saltiness": 1,
+        "time": 1578919358
+    },
+    {
+        "author": "tempsy",
+        "comment_text": "No",
+        "id": 22071253,
+        "parent_id": 22071223,
+        "saltiness": 1,
+        "time": 1579227286
+    },
+    {
+        "author": "Hamuko",
+        "comment_text": "No.",
+        "id": 21993110,
+        "parent_id": 21992934,
+        "saltiness": 1,
+        "time": 1578502154
+    },
+    {
+        "author": "WalterSear",
+        "comment_text": "Nonsense.",
+        "id": 21806296,
+        "parent_id": 21805934,
+        "saltiness": 1,
+        "time": 1576524893
+    },
+    {
+        "author": "gregmorton",
+        "comment_text": "Hell, no!",
+        "id": 21750719,
+        "parent_id": 21750553,
+        "saltiness": 1,
+        "time": 1575966715
+    },
+    {
+        "author": "rayiner",
+        "comment_text": "No?",
+        "id": 22102101,
+        "parent_id": 22102080,
+        "saltiness": 1,
+        "time": 1579554521
+    },
+    {
+        "author": "holografix",
+        "comment_text": "No.",
+        "id": 22152351,
+        "parent_id": 22151309,
+        "saltiness": 1,
+        "time": 1580050979
+    },
+    {
+        "author": "bevesce-",
+        "comment_text": "Warsaw",
+        "id": 22065271,
+        "parent_id": 22064414,
+        "saltiness": 1,
+        "time": 1579187932
+    },
+    {
+        "author": "Martin_Scrafalo",
+        "comment_text": ":(",
+        "id": 22039551,
+        "parent_id": 22038698,
+        "saltiness": 1,
+        "time": 1578955221
+    },
+    {
+        "author": "zhoujianfu",
+        "comment_text": "No.",
+        "id": 21980882,
+        "parent_id": 21979623,
+        "saltiness": 1,
+        "time": 1578411256
+    },
+    {
+        "author": "James-primitive",
+        "comment_text": "No. X",
+        "id": 21954702,
+        "parent_id": 21954576,
+        "saltiness": 1,
+        "time": 1578143252
+    },
+    {
+        "author": "mattacular",
+        "comment_text": "Dumb.",
+        "id": 21812406,
+        "parent_id": 21811180,
+        "saltiness": 1,
+        "time": 1576579745
+    },
+    {
+        "author": "slater",
+        "comment_text": "wth?",
+        "id": 21966650,
+        "parent_id": 21962972,
+        "saltiness": 1,
+        "time": 1578287752
+    },
+    {
+        "author": "GauntletWizard",
+        "comment_text": "No.",
+        "id": 22313490,
+        "parent_id": 22313309,
+        "saltiness": 1,
+        "time": 1581546400
+    },
+    {
+        "author": "stratoblack",
+        "comment_text": "Waste.",
+        "id": 21871243,
+        "parent_id": 21871026,
+        "saltiness": 1,
+        "time": 1577186055
+    },
+    {
+        "author": "criddell",
+        "comment_text": "No.",
+        "id": 22232194,
+        "parent_id": 22232140,
+        "saltiness": 1,
+        "time": 1580788017
+    },
+    {
+        "author": "jacob019",
+        "comment_text": "jealous",
+        "id": 21853906,
+        "parent_id": 21851299,
+        "saltiness": 1,
+        "time": 1576970253
+    },
+    {
+        "author": "gpm",
+        "comment_text": "No",
+        "id": 21946562,
+        "parent_id": 21946358,
+        "saltiness": 1,
+        "time": 1578064674
+    },
+    {
+        "author": "googlycooly",
+        "comment_text": "SPAM!",
+        "id": 21751194,
+        "parent_id": 21751156,
+        "saltiness": 1,
+        "time": 1575972799
+    },
+    {
+        "author": "CENGaverK",
+        "comment_text": "No",
+        "id": 22158159,
+        "parent_id": 22157353,
+        "saltiness": 1,
+        "time": 1580121136
+    },
+    {
+        "author": "zbentley",
+        "comment_text": "No.",
+        "id": 22095619,
+        "parent_id": 22052759,
+        "saltiness": 1,
+        "time": 1579485393
+    },
+    {
+        "author": "iron0013",
+        "comment_text": "Nah",
+        "id": 21826780,
+        "parent_id": 21826588,
+        "saltiness": 1,
+        "time": 1576688098
+    },
+    {
+        "author": "hootbootscoot",
+        "comment_text": "no",
+        "id": 21990790,
+        "parent_id": 21990614,
+        "saltiness": 1,
+        "time": 1578486668
+    },
+    {
+        "author": "pcdoodle",
+        "comment_text": "wtf?",
+        "id": 22344971,
+        "parent_id": 22344950,
+        "saltiness": 1,
+        "time": 1581904866
+    },
+    {
+        "author": "iCodeSometime",
+        "comment_text": "nah",
+        "id": 21996052,
+        "parent_id": 21995667,
+        "saltiness": 1,
+        "time": 1578519391
+    },
+    {
+        "author": "Millennium",
+        "comment_text": "No.",
+        "id": 21805441,
+        "parent_id": 21805252,
+        "saltiness": 1,
+        "time": 1576520175
+    },
+    {
+        "author": "konschubert",
+        "comment_text": "no.",
+        "id": 22088532,
+        "parent_id": 22087249,
+        "saltiness": 1,
+        "time": 1579394476
+    },
+    {
+        "author": "juped",
+        "comment_text": "I disagree.",
+        "id": 21986284,
+        "parent_id": 21985545,
+        "saltiness": 1,
+        "time": 1578438761
+    },
+    {
+        "author": "selimnairb",
+        "comment_text": "No shit.",
+        "id": 21716354,
+        "parent_id": 21710280,
+        "saltiness": 1,
+        "time": 1575579142
+    },
+    {
+        "author": "pfundstein",
+        "comment_text": "No.",
+        "id": 22322164,
+        "parent_id": 22321832,
+        "saltiness": 1,
+        "time": 1581633894
+    },
+    {
+        "author": "jaywalk",
+        "comment_text": "No?",
+        "id": 22119043,
+        "parent_id": 22119000,
+        "saltiness": 1,
+        "time": 1579711191
+    },
+    {
+        "author": "masonic",
+        "comment_text": "Leak.",
+        "id": 21769784,
+        "parent_id": 21769249,
+        "saltiness": 1,
+        "time": 1576132945
+    },
+    {
+        "author": "marvel_boy",
+        "comment_text": "No",
+        "id": 22316219,
+        "parent_id": 22316136,
+        "saltiness": 1,
+        "time": 1581582822
+    },
+    {
+        "author": "mtmail",
+        "comment_text": "no",
+        "id": 21877686,
+        "parent_id": 21877422,
+        "saltiness": 1,
+        "time": 1577264826
+    },
+    {
+        "author": "adamsea",
+        "comment_text": "Uncomfortable?",
+        "id": 21738792,
+        "parent_id": 21738297,
+        "saltiness": 1,
+        "time": 1575843536
+    },
+    {
+        "author": "ga-vu",
+        "comment_text": "No",
+        "id": 21797360,
+        "parent_id": 21797346,
+        "saltiness": 1,
+        "time": 1576430193
+    },
+    {
+        "author": "tom_mellior",
+        "comment_text": "No.",
+        "id": 22190695,
+        "parent_id": 22187581,
+        "saltiness": 1,
+        "time": 1580384707
+    },
+    {
+        "author": "odiroot",
+        "comment_text": "Cancer warnings.",
+        "id": 22361080,
+        "parent_id": 22360934,
+        "saltiness": 1,
+        "time": 1582064935
+    },
+    {
+        "author": "pje",
+        "comment_text": "No",
+        "id": 22070907,
+        "parent_id": 22051259,
+        "saltiness": 1,
+        "time": 1579223696
+    },
+    {
+        "author": "einpoklum",
+        "comment_text": "Seriously? :-(",
+        "id": 22379420,
+        "parent_id": 22373956,
+        "saltiness": 1,
+        "time": 1582239620
+    },
+    {
+        "author": "totetsu",
+        "comment_text": "heh",
+        "id": 22430693,
+        "parent_id": 22430166,
+        "saltiness": 1,
+        "time": 1582780196
+    },
+    {
+        "author": "lukaserat",
+        "comment_text": ":(",
+        "id": 22375732,
+        "parent_id": 22361282,
+        "saltiness": 1,
+        "time": 1582212804
+    },
+    {
+        "author": "ta999999171",
+        "comment_text": "Controversial.",
+        "id": 21905147,
+        "parent_id": 21905071,
+        "saltiness": 1,
+        "time": 1577614589
+    },
+    {
+        "author": "nl",
+        "comment_text": "No",
+        "id": 22333912,
+        "parent_id": 22330616,
+        "saltiness": 1,
+        "time": 1581751999
+    },
+    {
+        "author": "Robotbeat",
+        "comment_text": "Revenge.",
+        "id": 21744515,
+        "parent_id": 21743782,
+        "saltiness": 1,
+        "time": 1575912861
+    },
+    {
+        "author": "LeoNatan25",
+        "comment_text": "No",
+        "id": 22186715,
+        "parent_id": 22185918,
+        "saltiness": 0.48,
+        "time": 1580337288
+    },
+    {
+        "author": "sallu489",
+        "comment_text": "No",
+        "id": 21710486,
+        "parent_id": 21691802,
+        "saltiness": 0.11,
+        "time": 1575529034
+    },
+    {
+        "author": "tptacek",
+        "comment_text": "No.",
+        "id": 21895528,
+        "parent_id": 21895368,
+        "saltiness": 0.32,
+        "time": 1577487404
+    },
+    {
+        "author": "pinkfoot",
+        "comment_text": "No.",
+        "id": 21797949,
+        "parent_id": 21797928,
+        "saltiness": 1,
+        "time": 1576435098
+    },
+    {
+        "author": "snorrah",
+        "comment_text": "no",
+        "id": 22208656,
+        "parent_id": 22208482,
+        "saltiness": 1,
+        "time": 1580531223
+    },
+    {
+        "author": "edisonjoao",
+        "comment_text": "damn",
+        "id": 21987464,
+        "parent_id": 21913440,
+        "saltiness": 1,
+        "time": 1578448451
+    },
+    {
+        "author": "alkonaut",
+        "comment_text": "No.",
+        "id": 21913895,
+        "parent_id": 21913598,
+        "saltiness": 1,
+        "time": 1577719626
+    },
+    {
+        "author": "lisper",
+        "comment_text": "No.",
+        "id": 22090293,
+        "parent_id": 22090136,
+        "saltiness": 1,
+        "time": 1579424531
+    },
+    {
+        "author": "windowlesley",
+        "comment_text": "Bullshit!",
+        "id": 21814275,
+        "parent_id": 21814005,
+        "saltiness": 1,
+        "time": 1576595897
+    },
+    {
+        "author": "eshyong",
+        "comment_text": "No problem!",
+        "id": 22239721,
+        "parent_id": 22231064,
+        "saltiness": 1,
+        "time": 1580843641
+    },
+    {
+        "author": "pizzaknife",
+        "comment_text": "terrifying.",
+        "id": 21888364,
+        "parent_id": 21886864,
+        "saltiness": 1,
+        "time": 1577410255
+    },
+    {
+        "author": "Melkor765",
+        "comment_text": "Selfish",
+        "id": 22011882,
+        "parent_id": 22008441,
+        "saltiness": 1,
+        "time": 1578672239
+    },
+    {
+        "author": "fredsanford",
+        "comment_text": "FUD",
+        "id": 21926287,
+        "parent_id": 21925629,
+        "saltiness": 1,
+        "time": 1577846185
+    },
+    {
+        "author": "AceJohnny2",
+        "comment_text": "FUD.",
+        "id": 21717971,
+        "parent_id": 21717334,
+        "saltiness": 1,
+        "time": 1575589975
+    },
+    {
+        "author": "injidup",
+        "comment_text": "No",
+        "id": 22284379,
+        "parent_id": 22284260,
+        "saltiness": 1,
+        "time": 1581283134
+    },
+    {
+        "author": "KoftaBob",
+        "comment_text": "Pathetic.",
+        "id": 22196620,
+        "parent_id": 22195426,
+        "saltiness": 1,
+        "time": 1580423764
+    }
+]
