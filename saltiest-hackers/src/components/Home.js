@@ -26,7 +26,7 @@ const useStyles = makeStyles({
         backgroundSize: 'cover',
         backgroundRepeat: 'none',
         backgroundPosition: 'center center',
-        margin: '-2.7%',
+        margin: '0 -2.7% -2%',
     },
 })
 

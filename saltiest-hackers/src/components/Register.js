@@ -8,7 +8,7 @@ const Register = (props) => {
     // create history object so we can use it to change pages on submit
 
     // pull form methods from useForm
-    const { register, handleSubmit, errors } = useForm();
+    const { register, errors } = useForm();
 
 
     const [ newUser, setNewUser ] = useState({

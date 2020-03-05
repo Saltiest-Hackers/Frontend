@@ -36,7 +36,7 @@ const Nav = (props) => {
     return (
         <AppBar className={classes.navBar} position='sticky'>
             <Toolbar className={classes.toolbar}>
-                <Typography className={classes.logo}>🧂 Salty Hackers</Typography>
+                <Typography className={classes.logo}><span role='img' aria-label='salt emoji'>🧂</span> Salty Hackers</Typography>
                 <nav className={classes.nav}>
                     <Link className={classes.navLink} to='/feed'>Home</Link>
                     <Link className={classes.navLink} to='/saved'>Saved</Link>

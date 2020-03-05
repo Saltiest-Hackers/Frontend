@@ -40,7 +40,7 @@ const Commenter = (props) => {
                  console.error(error)
                  setNoLoad(true)
                 })
-    }, []);
+    }, [id]);
     const classes = useStyles();
     return(
         <React.Fragment>

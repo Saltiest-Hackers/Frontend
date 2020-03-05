@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { Backdrop, Card, CircularProgress, LinearProgress, Typography, makeStyles } from '@material-ui/core';
+import { Backdrop, Card, CircularProgress, Typography, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     title: {
