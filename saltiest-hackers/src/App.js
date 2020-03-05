@@ -14,7 +14,7 @@ import SaltiestUsers from './components/SaltiestUsers';
 const useStyles = makeStyles({
   column: {
     minHeight: '100vh',
-    backgroundColor: 'black',
+    backgroundColor: '#4b4b4b',
     paddingBottom: '1%',
   }
 })
