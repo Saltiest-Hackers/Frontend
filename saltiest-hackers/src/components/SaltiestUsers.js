@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { Backdrop, Card, CircularProgress, Typography, makeStyles } from '@material-ui/core';
+import { Backdrop, Card, CircularProgress, LinearProgress, Typography, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     title: {
         color: 'white',
         textAlign: 'center',
-        paddingTop: '3%'
+        paddingTop: '3%',
+        marginBottom: '5%',
     },
     backdrop: {
         zIndex: theme.zIndex.drawer + 1,
@@ -16,6 +17,26 @@ const useStyles = makeStyles(theme => ({
     backdropError: {
         zIndex: theme.zIndex.drawer + 1,
         color: '#f00',
+    },
+    users: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'space-between'
+    },
+    userCard: {
+        margin: '0 auto',
+        width: '30%',
+        padding: '3%',
+        marginBottom: '2%',
+    },
+    author: {
+        color: 'inherit',
+        '&:visited': {
+            color: 'inherit',
+        },
+        '&:hover': {
+            color: 'grey',
+        }
     },
 }))
 
@@ -44,15 +65,17 @@ const SaltiestUsers = () => {
                 }
             </Backdrop>
             <Typography variant='h4' component='h1' className={classes.title} >Salt Hall of Fame</Typography>
-            {data.map((user, index) => {
-                return (
-                    <Card>
-                        <Typography>{index + 1}. <Link to={`/commenter/${user.author}`}>{user.author}</Link></Typography>
-                        <Typography>Saltiness: {parseFloat((user.avg_salt * 100).toFixed(1))}%</Typography>
-                        <Typography>Number of comments: {user.n_comments}</Typography>
-                    </Card>
-                )
-            })}
+            <section className={classes.users}>
+                {data.map((user, index) => {
+                    return (
+                        <Card className={classes.userCard}>
+                            <Typography>{index + 1}. <Link className={classes.author} to={`/commenter/${user.author}`}>{user.author}</Link></Typography>
+                            <Typography>Saltiness: {parseFloat((user.avg_salt * 100).toFixed(1))}%</Typography>
+                            <Typography>Number of comments: {user.n_comments}</Typography>
+                        </Card>
+                    )
+                })}
+            </section>
         </React.Fragment>
     )
 }

@@ -35,37 +35,41 @@ const Comment = (props) => {
         axios.post('https://reqres.in/api/users', comment.id)
              .then(response => console.log(response));
     }
-    return (
-        <Card className={classes.card}>
-            <CardContent>
-                <Typography className={classes.title} component='h2'>
-                    {/* Only link to user page if not on a user page */}
-                    {props.user ? comment.author
-                                : <Link className={classes.author} to={`/commenter/${comment.author}`}>{comment.author}</Link>
+    if (comment.comment_text !== 'NaN') {
+        return (
+            <Card className={classes.card}>
+                <CardContent>
+                    <Typography className={classes.title} component='h2'>
+                        {/* Only link to user page if not on a user page */}
+                        {props.user ? comment.author
+                                    : <Link className={classes.author} to={`/commenter/${comment.author}`}>{comment.author}</Link>
+                        }
+                    </Typography>
+                    <Typography>
+                        Saltiness: {parseFloat((comment.saltiness * 100).toFixed(1))}%
+                    </Typography>
+                    <LinearProgress variant='determinate' value={comment.saltiness * 100} />
+                    <Typography component='time'>
+                        {commentDate}
+                    </Typography>
+                    <Typography>
+                        "{sanitizeHtml(comment.comment_text, {
+                            allowedTags: [],
+                            allowedAttributes: [],
+                        })}"
+                    </Typography>
+                    {/* Only display the saved icon if the saved prop is present  */}
+                    {props.saved ? undefined
+                                 : <Fab size='small' aria-label='save' onClick={() => saveComment()}>
+                                        <SaveIcon />
+                                    </Fab>
                     }
-                </Typography>
-                <Typography>
-                    Saltiness: {parseFloat((comment.saltiness * 100).toFixed(1))}%
-                </Typography>
-                <LinearProgress variant='determinate' value={comment.saltiness * 100} />
-                <Typography component='time'>
-                    {commentDate}
-                </Typography>
-                <Typography>
-                    "{sanitizeHtml(comment.comment_text, {
-                        allowedTags: [],
-                        allowedAttributes: [],
-                    })}"
-                </Typography>
-                {/* Only display the saved icon if the saved prop is present  */}
-                {props.saved ? undefined
-                             : <Fab size='small' aria-label='save' onClick={() => saveComment()}>
-                                    <SaveIcon />
-                                </Fab>
-                }
-            </CardContent>        
-        </Card>
-    )
+                </CardContent>        
+            </Card>
+        )
+    } else {
+        return null;
+    }
 }
 
 export default Comment;
