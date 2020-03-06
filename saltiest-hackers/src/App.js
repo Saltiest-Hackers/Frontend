@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, useHistory } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { CssBaseline, Container, makeStyles } from '@material-ui/core';
 import  PrivateRoute  from './components/PrivateRoute';
 
@@ -8,34 +8,25 @@ import Feed from './components/Feed';
 import Saved from './components/Saved';
 import Nav from './components/Nav';
 import Commenter from './components/Commenter';
-
-import background from './assets/background.jpg'
 import SaltiestUsers from './components/SaltiestUsers';
 
 
 const useStyles = makeStyles({
-  homeColumn: {
-    minHeight: '100vh',
-    backgroundImage: `url(${background})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'none',
-    backgroundPosition: 'center center'
-  },
   column: {
     minHeight: '100vh',
-    backgroundColor: 'black',
+    backgroundColor: '#4b4b4b',
+    paddingBottom: '1%',
   }
 })
 
 function App() {
-  // const { location } = useHistory();
   const classes = useStyles();
   return (
     <React.Fragment>
       <CssBaseline />
         <Router>
           <Nav/>
-          <Container maxWidth='md' >
+          <Container maxWidth='md' className={classes.column}>
             <Switch>
                 <Route exact path='/' component={Home}/>
                 <PrivateRoute path='/feed' component={Feed}/>

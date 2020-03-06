@@ -5,7 +5,7 @@ import { Card, CardContent, LinearProgress, Fab, Typography, makeStyles } from '
 import SaveIcon from '@material-ui/icons/Save';
 import sanitizeHtml from 'sanitize-html-react';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
     card: {
         padding: '1%',
         margin: '2%',
@@ -21,9 +21,30 @@ const useStyles = makeStyles({
         },
         '&:hover': {
             color: 'grey',
-        }
-    }
-})
+        },
+    },
+    date: {
+        color: 'grey',
+        fontSize: '.9rem',
+    },
+    saltiness: {
+        marginTop: '1%',
+    },
+    saltBar: {
+        margin: '1% 0 2%',
+    },
+    comment: {
+        fontSize: '1.3rem',
+    },
+    saveButton: {
+        backgroundColor: 'darkgrey',
+        marginLeft: '95%',
+        marginTop: '2%',
+        [theme.breakpoints.down('sm')]: {
+            marginLeft: '90%',
+        },
+    },
+}))
 
 const Comment = (props) => {
     const classes= useStyles();
@@ -45,22 +66,22 @@ const Comment = (props) => {
                                     : <Link className={classes.author} to={`/commenter/${comment.author}`}>{comment.author}</Link>
                         }
                     </Typography>
-                    <Typography>
+                    <Typography className={classes.saltiness}>
                         Saltiness: {parseFloat((comment.saltiness * 100).toFixed(1))}%
                     </Typography>
-                    <LinearProgress variant='determinate' value={comment.saltiness * 100} />
-                    <Typography component='time'>
+                    <LinearProgress variant='determinate' value={comment.saltiness * 100} className={classes.saltBar}/>
+                    <Typography component='time' className={classes.date}>
                         {commentDate}
                     </Typography>
-                    <Typography>
+                    <Typography className={classes.comment}>
                         "{sanitizeHtml(comment.comment_text, {
-                            allowedTags: [],
-                            allowedAttributes: [],
-                        })}"
+                                allowedTags: [],
+                                allowedAttributes: [],
+                            })}"
                     </Typography>
                     {/* Only display the saved icon if the saved prop is present  */}
                     {props.saved ? undefined
-                                 : <Fab size='small' aria-label='save' onClick={() => saveComment()}>
+                                 : <Fab className={classes.saveButton} size='small' aria-label='save' onClick={() => saveComment()}>
                                         <SaveIcon />
                                     </Fab>
                     }

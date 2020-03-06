@@ -9,7 +9,8 @@ const useStyles = makeStyles(theme => ({
     title: {
         color: 'white',
         textAlign: 'center',
-        paddingTop: '3%'
+        paddingTop: '3%',
+        marginBottom: '5%',
     },
     backdrop: {
         zIndex: theme.zIndex.drawer + 1,
@@ -39,7 +40,7 @@ const Commenter = (props) => {
                  console.error(error)
                  setNoLoad(true)
                 })
-    }, []);
+    }, [id]);
     const classes = useStyles();
     return(
         <React.Fragment>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { Backdrop, Card, CircularProgress, LinearProgress, Typography, makeStyles } from '@material-ui/core';
+import { Backdrop, Card, CircularProgress, Typography, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     title: {
@@ -21,16 +21,20 @@ const useStyles = makeStyles(theme => ({
     users: {
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
     },
     userCard: {
         margin: '0 auto',
         width: '30%',
         padding: '3%',
         marginBottom: '2%',
+        [theme.breakpoints.down('sm')]: {
+            width: '75%',
+        },
     },
     author: {
         color: 'inherit',
+        fontSize: '1.3rem',
         '&:visited': {
             color: 'inherit',
         },
@@ -38,6 +42,12 @@ const useStyles = makeStyles(theme => ({
             color: 'grey',
         }
     },
+    index: {
+        fontSize: '1.3rem',
+    },
+    text: {
+        
+    }
 }))
 
 const SaltiestUsers = () => {
@@ -69,7 +79,7 @@ const SaltiestUsers = () => {
                 {data.map((user, index) => {
                     return (
                         <Card key={index} className={classes.userCard}>
-                            <Typography>{index + 1}. <Link className={classes.author} to={`/commenter/${user.author}`}>{user.author}</Link></Typography>
+                            <Typography className={classes.index}>{index + 1}. <Link className={classes.author} to={`/commenter/${user.author}`}>{user.author}</Link></Typography>
                             <Typography>Saltiness: {parseFloat((user.avg_salt * 100).toFixed(1))}%</Typography>
                             <Typography>Number of comments: {user.n_comments}</Typography>
                         </Card>

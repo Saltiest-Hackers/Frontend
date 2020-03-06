@@ -14,6 +14,9 @@ const useStyles = makeStyles({
     resetButton: {
         marginTop: '2%',
     },
+    filterSelect: {
+        minWidth: '100px',
+    }
 })
 
 const Filters = (props) => {
@@ -99,7 +102,7 @@ const Filters = (props) => {
             <ExpansionPanelDetails className={classes.boxContent}>
                 <TextField onChange={(e) => setSearch(e.target.value)} value={search} label='Search' fullWidth={true} className={classes.searchBar}/>
                 <InputLabel htmlFor='sort' id='sort-label'>Sort By</InputLabel> 
-                <Select onChange={(e) => setSort(e.target.value)} id='sort' labelId='sort-label' autoWidth value={sort}>
+                <Select className={classes.filterSelect} onChange={(e) => setSort(e.target.value)} id='sort' labelId='sort-label' autoWidth value={sort}>
                     <MenuItem value=''>None</MenuItem>
                     <MenuItem value='ascSalt'>Saltiness (low - high)</MenuItem>
                     <MenuItem value='descSalt'>Saltiness (high - low)</MenuItem>
