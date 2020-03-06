@@ -38,6 +38,7 @@ const Feed = () => {
         setLoading(true);
         axios.get('https://hn-saltiness.herokuapp.com/topcomments')
              .then((response) => {
+                 console.log(response)
                  setData(response.data)
                  setLoading(false);
                 })
