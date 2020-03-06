@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent, LinearProgress, Fab, Typography, makeStyles } from '@material-ui/core';
 import SaveIcon from '@material-ui/icons/Save';
 import sanitizeHtml from 'sanitize-html-react';
+import { axiosWithAuth } from '../utils/axiosWithAuth';
+import { deleteComment } from '../actions/editComment';
+import { connect } from 'react-redux';
+import EditForm from './EditComment';
 
 const useStyles = makeStyles(theme => ({
     card: {
@@ -47,19 +51,29 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const Comment = (props) => {
+
+const onlySubmit = (e, id) => {
+    e.preventDefault()
+    console.log('onClick: Active')
+    props.deleteComment(id)
+
+}
     const classes= useStyles();
     const comment = props.comment;
     // Format date from python date string to user readable date
     const commentDate = new Date(comment.time * 1000).toDateString().slice(4)
     // Comment saving code
+
     const saveComment = () => {
-        axios.post('https://reqres.in/api/users', comment.id)
-             .then(response => console.log(response));
+        axiosWithAuth()
+        .post('https://saltiest-hacker-news-trolls.herokuapp.com/api/comment', comment.id)
+        .then(response => console.log(response));
     }
     if (comment.comment_text !== 'NaN') {
         return (
-            <Card className={classes.card}>
+            <Card className={classes.card} >
                 <CardContent>
+                    
                     <Typography className={classes.title} component='h2'>
                         {/* Only link to user page if not on a user page */}
                         {props.user ? comment.author
@@ -85,7 +99,14 @@ const Comment = (props) => {
                                         <SaveIcon />
                                     </Fab>
                     }
-                </CardContent>        
+                    {!props.saved?undefined
+                        :<EditForm id={comment.id} comment={comment}/>
+
+                }
+                   
+                   <button onClick={(e) => onlySubmit(e, comment.id)}>Delete</button>
+                </CardContent>      
+                  
             </Card>
         )
     } else {
@@ -93,4 +114,11 @@ const Comment = (props) => {
     }
 }
 
-export default Comment;
+const mapStateToProps = (state) => {
+    return ( state )
+} 
+
+export default connect( 
+    mapStateToProps,
+    {deleteComment}
+)(Comment);

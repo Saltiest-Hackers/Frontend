@@ -27,6 +27,7 @@ const Saved = () => {
     //          .catch((error) => console.error(error))
     // }, [])
     const classes = useStyles();
+
     return(
         <React.Fragment>
             <Typography variant='h4' className={classes.title} component='h1'>Saved Comments</Typography>
@@ -35,6 +36,7 @@ const Saved = () => {
             {display.map((comment, index) => {
                 return (
                     <Comment key={index} comment={comment} saved/>
+                    
                 )
             })}
         </React.Fragment>
