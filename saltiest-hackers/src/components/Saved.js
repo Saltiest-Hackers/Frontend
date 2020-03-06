@@ -5,6 +5,7 @@ import { Typography, makeStyles } from '@material-ui/core';
 import dummy from '../assets/MOCK_DATA.json'
 import Comment from './Comment';
 import Filters from './Filters.js';
+import axios from 'axios';
 
 const useStyles = makeStyles({
     title: {
@@ -21,14 +22,9 @@ const Saved = () => {
     // map over them to create a list of comments in state
     // ---- NOT ACTIVE BECAUSE THERE IS NO LIST OF SAVED IDS YET ----
     // useEffect(() => {
-    //     axios.get('URL FOR USERS SAVED COMMENTS')
-    //          .then((response) => {
-    //              const comments = response.data.map((id) => {
-    //                  axios.get(`https://hn-saltiness.herokuapp.com/comment/${id}`)
-    //                       .then((response) => response)
-    //              })
-    //              setDisplay(comments);
-    //          })
+    //     axios.get('https://saltiest-hacker-news-trolls.herokuapp.com/api/saved-comments')
+    //          .then((response) => setDisplay(response))
+    //          .catch((error) => console.error(error))
     // }, [])
     const classes = useStyles();
     return(
