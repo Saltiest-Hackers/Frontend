@@ -21,11 +21,11 @@ const Saved = () => {
     // useEffect to take the list of comment IDs stored in the user data and 
     // map over them to create a list of comments in state
     // ---- NOT ACTIVE BECAUSE THERE IS NO LIST OF SAVED IDS YET ----
-    // useEffect(() => {
-    //     axios.get('https://saltiest-hacker-news-trolls.herokuapp.com/api/saved-comments')
-    //          .then((response) => setDisplay(response))
-    //          .catch((error) => console.error(error))
-    // }, [])
+    useEffect(() => {
+        axios.get('https://hn-saltiness.herokuapp.com/topcomments')
+             .then((response) => setDisplay(response))
+             .catch((error) => console.error(error))
+    }, [])
     const classes = useStyles();
 
     return(

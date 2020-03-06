@@ -41,6 +41,7 @@ const Nav = (props) => {
                     <Link className={classes.navLink} to='/feed'>Home</Link>
                     <Link className={classes.navLink} to='/saved'>Saved</Link>
                     <Link className={classes.navLink} to='/saltiest'>Saltiest Users</Link>
+                    <a href='https://devjaymoe.github.io/saltyhackers/about.html' className={classes.navLink}>About</a>
                 </nav>
             </Toolbar>
         </AppBar>
