@@ -4,7 +4,7 @@
 
 1. Fork the project and clone it
 2. Run `npm install`
-3. Run 'npm run start`
+3. Run `npm run start`
 
 ## About the project
 
