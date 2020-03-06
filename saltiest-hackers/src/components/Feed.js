@@ -5,7 +5,6 @@ import { Backdrop, CircularProgress, Typography, makeStyles } from '@material-ui
 import Comment from './Comment';
 import Filters from './Filters.js';
 
-
 const useStyles = makeStyles(theme => ({
     title: {
         color: 'white',
@@ -39,8 +38,8 @@ const Feed = () => {
         setLoading(true);
         axios.get('https://saltiest-hacker-news-trolls.herokuapp.com/api/comment')
              .then((response) => {
-                 console.log(response)
-                 setData(response.data)
+                 console.log(response.data)
+                 setData(response.data.comment)
                  setLoading(false);
                 })
              .catch((error) => {

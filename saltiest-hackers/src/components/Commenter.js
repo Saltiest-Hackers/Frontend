@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
 import { Backdrop, CircularProgress, Typography, makeStyles } from '@material-ui/core';
 
 import Comment from './Comment';
@@ -32,11 +31,9 @@ const Commenter = (props) => {
     // https://hn-saltiness.herokuapp.com/user/${id}
     useEffect(() => {
         setLoading(true);
-        console.log(props)
             axiosWithAuth()
             .get(`https://hn-saltiness.herokuapp.com/user/${id}`)
              .then((response) => {
-                 
                  setData(response.data);
                  setLoading(false);
                 })
