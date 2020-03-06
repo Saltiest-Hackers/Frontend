@@ -36,7 +36,7 @@ const Feed = () => {
     // axios call to populate state with data from database
     useEffect(() => {
         setLoading(true);
-        axios.get('https://hn-saltiness.herokuapp.com/topcomments')
+        axios.get('https://saltiest-hacker-news-trolls.herokuapp.com/api/comment')
              .then((response) => {
                  console.log(response)
                  setData(response.data)

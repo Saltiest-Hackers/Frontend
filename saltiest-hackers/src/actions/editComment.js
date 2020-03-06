@@ -4,12 +4,11 @@ import { axiosWithAuth } from '../utils/axiosWithAuth';
 export const DELETE_SUCCESS = 'DELETE_SUCCESS';
 export const DELETE_ERROR = 'DELETE_ERROR';
 
-export const deleteComment = (id, e) => dispatch => {
+export const deleteComment = (id) => dispatch => {
     console.log(id)
-    e.preventDefault()
     axiosWithAuth()
     .delete(`https://saltiest-hacker-news-trolls.herokuapp.com/api/comment/${id}`)
-    .then( res => dispatch().get(`https://saltiest-hacker-news-trolls.herokuapp.com/api/comment/${id}`))
+    .then( res => axiosWithAuth().get(`https://saltiest-hacker-news-trolls.herokuapp.com/api/comment`))
         .then(res => dispatch({
             type: DELETE_SUCCESS,
             payload: res.data
@@ -23,16 +22,15 @@ export const EDIT_SUCCESS = 'EDIT_SUCECESS';
 export const EDIT_FAIL = 'EDIT_FAIL';
 
 export const editComment = (id, updatedComment) => dispatch => {
+    console.log(id)
     axiosWithAuth()
         .put(`https://saltiest-hacker-news-trolls.herokuapp.com/api/comment/${id}`, updatedComment)
-        .then (res => {
-            console.log(res.data);
-            dispatch({
-                type: EDIT_SUCCESS,
-                payload: res.data.
-                id
-            });
-        })
+        .then( res => axiosWithAuth().get(`https://saltiest-hacker-news-trolls.herokuapp.com/api/comment`))
+        .then(res => dispatch({
+            type: EDIT_SUCCESS,
+            payload: res.data
+        }))
+       
 
         .catch( err => {
             dispatch({

@@ -7,6 +7,7 @@ import sanitizeHtml from 'sanitize-html-react';
 import { axiosWithAuth } from '../utils/axiosWithAuth';
 import { deleteComment } from '../actions/editComment';
 import { connect } from 'react-redux';
+import EditForm from './EditComment';
 
 const useStyles = makeStyles({
     card: {
@@ -29,14 +30,13 @@ const useStyles = makeStyles({
 })
 
 const Comment = (props) => {
-    
-const onlySubmit = (e) => {
+
+const onlySubmit = (e, id) => {
     e.preventDefault()
     console.log('onClick: Active')
-    deleteComment(comment.id)
+    props.deleteComment(id)
 
 }
-    console.log(props)
     const classes= useStyles();
     const comment = props.comment;
     // Format date from python date string to user readable date
@@ -50,7 +50,7 @@ const onlySubmit = (e) => {
     }
     if (comment.comment_text !== 'NaN') {
         return (
-            <Card className={classes.card}>
+            <Card className={classes.card} >
                 <CardContent>
                     
                     <Typography className={classes.title} component='h2'>
@@ -78,8 +78,12 @@ const onlySubmit = (e) => {
                                         <SaveIcon />
                                     </Fab>
                     }
+                    {!props.saved?undefined
+                        :<EditForm id={comment.id} comment={comment}/>
+
+                }
                    
-                   <button onClick={ onlySubmit}>Delete</button>
+                   <button onClick={(e) => onlySubmit(e, comment.id)}>Delete</button>
                 </CardContent>      
                   
             </Card>
