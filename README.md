@@ -1,5 +1,7 @@
 # Saltiest Hackers
 
+Live version of project available here: https://frontend-ruby.now.sh/
+
 ## To get the project running
 
 1. Fork the project and clone it
